@@ -5,10 +5,24 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    @apply selection:bg-secondary/30 selection:text-white;
   }
 
   body {
     @apply bg-primary text-textPrimary font-sans;
+  }
+
+  /* Scrollbar customization */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary/30 rounded-full hover:bg-secondary/50 transition-colors;
   }
 }
 
@@ -18,11 +32,11 @@
   }
 
   .nav-link {
-    @apply text-textSecondary hover:text-secondary transition-colors duration-300;
+    @apply text-textSecondary hover:text-secondary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary hover:after:w-full after:transition-all;
   }
 
   .btn-primary {
-    @apply px-6 py-3 border-2 border-secondary text-secondary rounded hover:bg-secondary/10 transition-all duration-300;
+    @apply px-6 py-3 border-2 border-secondary text-secondary rounded-lg hover:bg-secondary/10 transition-all duration-300 relative overflow-hidden after:absolute after:inset-0 after:bg-secondary/10 after:translate-x-[-100%] hover:after:translate-x-0 after:transition-transform;
   }
 }
 
@@ -33,6 +47,52 @@
   100% { transform: translateY(0px); }
 }
 
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.group:hover .group-hover\:translate-y-1 {
+  transform: translateY(0.25rem);
+}
+
+/* Estilo para o botão de download */
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-secondary\/90 {
+  background-color: rgba(var(--color-secondary-rgb), 0.9);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
 } 

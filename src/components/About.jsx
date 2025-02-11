@@ -7,11 +7,18 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
+import { BiData } from 'react-icons/bi'
+import { FaRobot, FaChartLine } from 'react-icons/fa'
+import { BsCloudFill } from 'react-icons/bs'
+import { AiOutlineCode } from 'react-icons/ai'
+import { TbMathFunction } from 'react-icons/tb'
+import { useState } from 'react'
 
 // List of technical skills organized by category
 const skillsByCategory = {
   dataEngineering: {
     title: 'Data Engineering',
+    icon: BiData,
     skills: [
       'Airflow',
       'ETL Process',
@@ -26,6 +33,7 @@ const skillsByCategory = {
   },
   dataScience: {
     title: 'Data Science',
+    icon: TbMathFunction,
     skills: [
       'TensorFlow',
       'SciPy',
@@ -40,6 +48,7 @@ const skillsByCategory = {
   },
   devOpsCloud: {
     title: 'DevOps & Cloud Computing',
+    icon: BsCloudFill,
     skills: [
       'AWS',
       'Azure',
@@ -54,6 +63,7 @@ const skillsByCategory = {
   },
   softwareEngineering: {
     title: 'Software Engineering',
+    icon: AiOutlineCode,
     skills: [
       'Python',
       'Java',
@@ -68,6 +78,7 @@ const skillsByCategory = {
   },
   artificialIntelligence: {
     title: 'Artificial Intelligence',
+    icon: FaRobot,
     skills: [
       'Deep Learning',
       'Neural Networks',
@@ -82,6 +93,7 @@ const skillsByCategory = {
   },
   businessIntelligence: {
     title: 'Business Intelligence',
+    icon: FaChartLine,
     skills: [
       'Power BI',
       'Tableau',
@@ -98,6 +110,7 @@ const skillsByCategory = {
 
 const About = () => {
   const { t } = useTranslation()
+  const [activeCategory, setActiveCategory] = useState(null)
   // Setup intersection observer for scroll-based animations
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -132,43 +145,65 @@ const About = () => {
         {/* Skills section */}
         <div>
           <h3 className="text-2xl font-semibold mb-8 text-center">
-            Areas of Expertise & Technologies
+            {t('about.expertise')}
           </h3>
           {/* Skills categories */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(skillsByCategory).map(([key, category], categoryIndex) => (
-              <motion.div
-                key={key}
-                className="bg-secondary/5 rounded-lg p-6 hover:bg-secondary/10 transition-colors"
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ 
-                  duration: 0.5,
-                  delay: categoryIndex * 0.1
-                }}
-              >
-                <h4 className="text-xl font-medium mb-4 text-secondary">
-                  {category.title}
-                </h4>
-                <ul className="space-y-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <motion.li
-                      key={skill}
-                      className="flex items-center text-textSecondary"
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={inView ? { opacity: 1, x: 0 } : {}}
-                      transition={{ 
-                        duration: 0.3, 
-                        delay: categoryIndex * 0.1 + skillIndex * 0.05 
-                      }}
-                    >
-                      <span className="text-secondary mr-2">▹</span>
-                      {skill}
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            {Object.entries(skillsByCategory).map(([key, category], categoryIndex) => {
+              const Icon = category.icon
+              return (
+                <motion.div
+                  key={key}
+                  className="group relative bg-secondary/5 rounded-lg p-6 hover:bg-secondary/10 transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ 
+                    duration: 0.5,
+                    delay: categoryIndex * 0.1
+                  }}
+                  onClick={() => setActiveCategory(activeCategory === key ? null : key)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <Icon className="text-2xl text-secondary" />
+                    <h4 className="text-xl font-medium text-secondary">
+                      {category.title}
+                    </h4>
+                  </div>
+                  
+                  {/* Skills list - expandable on click */}
+                  <div className={`overflow-hidden transition-all duration-300 ${activeCategory === key ? 'h-[200px]' : 'h-0'}`}>
+                    <div className="overflow-y-auto h-full pr-2 custom-scrollbar">
+                      <ul className="space-y-2">
+                        {category.skills.map((skill, skillIndex) => (
+                          <motion.li
+                            key={skill}
+                            className="flex items-center text-textSecondary"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ 
+                              duration: 0.3, 
+                              delay: skillIndex * 0.05 
+                            }}
+                          >
+                            <span className="text-secondary mr-2">▹</span>
+                            {skill}
+                          </motion.li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  {/* Indicator text */}
+                  <p className="text-textSecondary text-sm mt-2">
+                    {activeCategory === key 
+                      ? t('about.skills.collapse') 
+                      : t('about.skills.expand')
+                    }
+                  </p>
+                </motion.div>
+              )
+            })}
           </div>
         </div>
       </motion.div>

@@ -13,6 +13,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
+import Journey from './components/Journey'
 
 // Import i18n configuration
 import i18n from './i18n'
@@ -47,6 +48,7 @@ function App() {
             <Hero />
             <About />
             <Projects />
+            {/* <Journey /> */}
             <Contact />
           </motion.div>
         </main>

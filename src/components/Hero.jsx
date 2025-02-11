@@ -119,35 +119,27 @@ const Hero = () => {
           {t('hero.description')}
         </motion.p>
 
-        {/* CTA button */}
-        <motion.div variants={itemVariants}>
-          <a href="#projects" className="btn-primary inline-block">
+        {/* CTA buttons */}
+        <motion.div 
+          variants={itemVariants}
+          className="flex flex-wrap justify-center gap-4"
+        >
+          <a href="#about" className="btn-primary">
+            {t('about.title')}
+          </a>
+          <a href="#projects" className="btn-primary">
             {t('projects.title')}
+          </a>
+          <a href="#contact" className="btn-primary">
+            {t('contact.title')}
           </a>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          animate={{
-            y: [0, -10, 0],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          <div className="w-6 h-10 border-2 border-secondary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-secondary rounded-full mt-2" />
-          </div>
-        </motion.div>
+        {/* Remove scroll indicator and keep only the background decoration */}
+        <div className="absolute right-0 top-1/4 -translate-y-1/2 opacity-10">
+          <div className="text-[20rem] font-bold text-secondary rotate-90">&lt;/&gt;</div>
+        </div>
       </motion.div>
-
-      {/* Background decoration */}
-      <div className="absolute right-0 top-1/4 -translate-y-1/2 opacity-10">
-        <div className="text-[20rem] font-bold text-secondary rotate-90">&lt;/&gt;</div>
-      </div>
     </section>
   )
 }

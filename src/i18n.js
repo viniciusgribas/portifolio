@@ -42,6 +42,38 @@ const resources = {
                           'I use best practices in Cloud Computing, DevSecOps, Software Architecture, Data Engineering, and Artificial Intelligence to create ' +
                           'robust and scalable solutions.',
       'about.description3': 'I am always seeking new challenges and opportunities to learn and grow, believing that collaboration and knowledge sharing are essential for success.',
+      'about.timeline': {
+        'title': 'My Journey',
+        'items': [
+          {
+            'period': '2023 - Present',
+            'role': 'Data Engineer, Analytics Engineering',
+            'company': 'Raizen Energia S.A.',
+            'description': 'Leading data quality initiatives and developing cloud solutions for data democratization across multiple departments.'
+          },
+          {
+            'period': '2022 - 2023',
+            'role': 'Data Engineer, ETL Pipelines Development',
+            'company': 'Raizen Energia S.A.',
+            'description': 'Architected and implemented 20+ data pipelines, integrating various data sources and developing ML-enhanced solutions.'
+          },
+          {
+            'period': '2021 - 2022',
+            'role': 'Business Intelligence Analyst',
+            'company': 'Energisa S.A.',
+            'description': 'Enhanced data warehousing capabilities and automated data processes, reducing manual work by 75%.'
+          },
+          {
+            'period': '2019 - 2021',
+            'role': 'Data Scientist, Intern',
+            'company': 'Brazilian Electricity Regulatory Agency (ANEEL)',
+            'description': 'Contributed to national energy customer database development, receiving formal recognition from the Brazilian government.'
+          }
+        ]
+      },
+      'about.expertise': 'Areas of Expertise & Technologies',
+      'about.skills.expand': 'Click to expand',
+      'about.skills.collapse': 'Click to collapse',
       
       // Projects section
       'projects.title': 'Featured Projects',
@@ -64,6 +96,14 @@ const resources = {
                             'Feel free to reach out if you have any questions or want to collaborate ' +
                             'on exciting projects!',
       'contact.button': 'Say Hello',
+      'contact.downloadCV': 'Download CV',
+      'contact.modal.title': 'Download CV',
+      'contact.modal.name': 'Name',
+      'contact.modal.email': 'Email',
+      'contact.modal.download': 'Download',
+      'contact.modal.error': 'Error sending contact information. Please try again.',
+      'contact.modal.message': 'Message (optional)',
+      'contact.modal.messagePlaceholder': 'Write your message here...',
     },
   },
   pt: {
@@ -107,6 +147,38 @@ const resources = {
                           'soluções robustas e escaláveis.',
       'about.description3': 'Estou sempre em busca de novos desafios e oportunidades para aprender e crescer, ' +
                             'acreditando que a colaboração e a troca de conhecimentos são fundamentais para o sucesso.',
+      'about.timeline': {
+        'title': 'Minha Trajetória',
+        'items': [
+          {
+            'period': '2023 - Presente',
+            'role': 'Engenheiro de Dados, Engenharia Analítica',
+            'company': 'Raizen Energia S.A.',
+            'description': 'Liderando iniciativas de qualidade de dados e desenvolvendo soluções em nuvem para democratização de dados em múltiplos departamentos.'
+          },
+          {
+            'period': '2022 - 2023',
+            'role': 'Engenheiro de Dados, Desenvolvimento de Pipelines ETL',
+            'company': 'Raizen Energia S.A.',
+            'description': 'Arquitetou e implementou mais de 20 pipelines de dados, integrando várias fontes e desenvolvendo soluções aprimoradas com ML.'
+          },
+          {
+            'period': '2021 - 2022',
+            'role': 'Analista de Business Intelligence',
+            'company': 'Energisa S.A.',
+            'description': 'Aprimorou capacidades de data warehousing e automatizou processos de dados, reduzindo trabalho manual em 75%.'
+          },
+          {
+            'period': '2019 - 2021',
+            'role': 'Cientista de Dados, Estagiário',
+            'company': 'Agência Nacional de Energia Elétrica (ANEEL)',
+            'description': 'Contribuiu para o desenvolvimento do banco de dados nacional de consumidores de energia, recebendo reconhecimento formal do governo brasileiro.'
+          }
+        ]
+      },
+      'about.expertise': 'Áreas de Especialização & Tecnologias',
+      'about.skills.expand': 'Clique para expandir',
+      'about.skills.collapse': 'Clique para recolher',
       
       // Projects section
       'projects.title': 'Projetos em Destaque',
@@ -129,6 +201,14 @@ const resources = {
                             'Sinta-se à vontade para entrar em contato se tiver alguma dúvida ou quiser colaborar ' +
                             'em projetos interessantes!',
       'contact.button': 'Diga Olá',
+      'contact.downloadCV': 'Baixar Currículo',
+      'contact.modal.title': 'Baixar Currículo',
+      'contact.modal.name': 'Nome',
+      'contact.modal.email': 'E-mail',
+      'contact.modal.download': 'Baixar',
+      'contact.modal.error': 'Erro ao enviar informações de contato. Por favor, tente novamente.',
+      'contact.modal.message': 'Mensagem (opcional)',
+      'contact.modal.messagePlaceholder': 'Escreva sua mensagem aqui...',
     },
   },
 }

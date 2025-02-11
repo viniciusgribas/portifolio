@@ -1,0 +1,31 @@
+Hello! I want to build my CV
+# You are an artificial intelligence, you must help me with what is requested, I will be responsible for calibrating you,
+testing the code you send me, updating the information in the code and validating it.
+
+# Main Goal:
+
+- I work as a Data Engineer, specializing in Data Science and Analytics and Software Engineering. 
+- My professional specialty is developing data-related software products.
+- That said, I want to set up a One-page web page with my domain name "viniciusgribas" ('.com' ; '.io' ; .etc...) free of charge.
+- Where I can send the url to interested users and they can export them as pdfs.
+- The page itself should serve as a portfolio, showcasing my development skills.
+
+# first instructions
+
+1 ) I already have a repository that I cloned from github and I'm using the design provided there to build my own without too much trouble. I'm sending you some images showing the design I'm going to follow.
+
+2) I already have a page on githubpages ( viniciusgribas.github.io) , but I don't like the way it is now and I'm making another one from scratch.
+
+3) Whenever you want a code, ask me and I'll send it to you.
+
+# Our step-by-step will be:
+1) Structure the repository I'm using as a template with my curriculum information, editing each of the topics that are in the template. 
+e.g.: Step 1 - Updating name, contacts and photo; Step 2 - Updating about me; Step 3 ... etc.
+
+2) You should only move on to another stage when I choose to go to it.
+
+3) At the end of structuring, we will modify details, such as
+3.1) include light and dark versions for the page
+3.2) Include the option to export as a pdf, so that you can download the file.
+
+
