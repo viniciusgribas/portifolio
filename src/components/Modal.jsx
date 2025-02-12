@@ -25,7 +25,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
             exit={{ opacity: 0, scale: 0.75 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
           >
-            <div className="bg-primary border-2 border-secondary rounded-lg p-6 max-w-md w-full">
+            <div className="bg-white border-2 border-secondary rounded-lg p-6 max-w-md w-full">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-semibold text-secondary">
                   {t('contact.modal.title')}
@@ -80,7 +80,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
                 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-secondary text-primary rounded-lg hover:bg-secondary/90 transition-colors"
+                  className="w-full px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors"
                 >
                   {t('contact.modal.download')}
                 </button>

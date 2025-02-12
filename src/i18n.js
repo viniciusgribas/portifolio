@@ -104,6 +104,12 @@ const resources = {
       'contact.modal.error': 'Error sending contact information. Please try again.',
       'contact.modal.message': 'Message (optional)',
       'contact.modal.messagePlaceholder': 'Write your message here...',
+      
+      // Posts section
+      'posts.title': 'Posts',
+      'posts.all': 'All',
+      'posts.readMore': 'Read More',
+      'posts.filterInstruction': 'Click on the tags to filter the posts.',
     },
   },
   pt: {
@@ -209,6 +215,12 @@ const resources = {
       'contact.modal.error': 'Erro ao enviar informações de contato. Por favor, tente novamente.',
       'contact.modal.message': 'Mensagem (opcional)',
       'contact.modal.messagePlaceholder': 'Escreva sua mensagem aqui...',
+      
+      // Posts section
+      'posts.title': 'Posts',
+      'posts.all': 'All',
+      'posts.readMore': 'Read More',
+      'posts.filterInstruction': 'Clique nas tags para filtrar os posts.',
     },
   },
 }

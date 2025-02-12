@@ -13,6 +13,9 @@ import { useState } from 'react'
 import Modal from './Modal'
 import emailjs from '@emailjs/browser'
 
+// Adicione esta linha logo após os imports
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+
 // Social media links configuration
 const socialLinks = [
   {
@@ -60,7 +63,14 @@ const Contact = () => {
     const message = formData.get('message')
 
     try {
-      // Enviar e-mail usando EmailJS
+      // Log mais detalhado
+      console.log('Ambiente:', {
+        NODE_ENV: process.env.NODE_ENV,
+        VITE_EMAILJS_SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        VITE_EMAILJS_TEMPLATE_ID: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        hasPublicKey: !!import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      })
+
       const templateParams = {
         to_email: 'viniciusgribas@gmail.com',
         from_name: name,
@@ -70,12 +80,13 @@ const Contact = () => {
 Message: ${message || 'No message provided'}`
       }
 
-      await emailjs.send(
+      const response = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        templateParams
       )
+
+      console.log('Email enviado com sucesso:', response)
 
       // Fechar o modal e iniciar o download
       setIsModalOpen(false)
@@ -84,7 +95,7 @@ Message: ${message || 'No message provided'}`
       link.download = 'Vinicius_Guerra_e_Ribas_CV.pdf'
       link.click()
     } catch (error) {
-      console.error('Error sending email:', error)
+      console.error('Erro detalhado:', error)
       alert(t('contact.modal.error'))
     }
   }
@@ -153,15 +164,16 @@ Message: ${message || 'No message provided'}`
           </motion.a>
 
           {/* Download CV button - updated */}
-          <motion.button
+          <motion.a
+            href="#"
             onClick={handleDownloadCV}
-            className="inline-flex items-center gap-2 px-8 py-4 text-lg font-medium bg-secondary text-primary border-2 border-secondary rounded-lg hover:bg-secondary/90 transition-all duration-300 group"
+            className="inline-flex items-center gap-2 px-8 py-4 text-lg font-medium border-2 border-secondary text-secondary rounded-lg hover:bg-secondary/10 transition-all duration-300 group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             {t('contact.downloadCV')}
             <FiDownload className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 
