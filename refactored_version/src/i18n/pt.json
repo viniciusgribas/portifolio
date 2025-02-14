@@ -1,0 +1,24 @@
+
+{
+    "hero": {
+      "title": "Bem-vindo ao Meu Portfólio"
+    },
+    "about": {
+      "title": "Sobre Mim"
+    },
+    "projects": {
+      "title": "Projetos"
+    },
+    "contact": {
+      "title": "Contato",
+      "info": "Sinta-se à vontade para entrar em contato comigo."
+    },
+    "navbar": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato",
+      "openMenu": "Abrir menu",
+      "logo": "</VGR>"
+    }
+  }

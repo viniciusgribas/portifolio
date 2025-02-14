@@ -1,0 +1,24 @@
+
+{
+    "hero": {
+      "title": "Welcome to My Portfolio"
+    },
+    "about": {
+      "title": "About Me"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "contact": {
+      "title": "Contact",
+      "info": "Feel free to reach out to me."
+    },
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact",
+      "openMenu": "Open menu",
+      "logo": "<VGR>"
+    }
+  }
