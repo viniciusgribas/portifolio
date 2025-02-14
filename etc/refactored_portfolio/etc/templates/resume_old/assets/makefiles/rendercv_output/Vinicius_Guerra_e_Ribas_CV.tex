@@ -1,0 +1,429 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Vinicius Guerra e Ribas's CV},
+    pdfauthor={Vinicius Guerra e Ribas},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Vinicius Guerra e Ribas - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{
+    % avoid page braking right after the section title
+    \needspace{4\baselineskip}
+    % make the font size of the section title large and color it with the primary color
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+    % from the end of the title to the end of the body
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[] % section title formatting
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in May 2024}\hspace{\widthof{Last updated in May 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\mbox{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}}
+
+
+\begin{document}
+    \placelastupdatedtext
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Vinicius Guerra e Ribas}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Rio de Janeiro - RJ, Brazil}
+        \kern 0.5 cm
+        \mbox{\hrefWithoutArrow{mailto:viniciusgribas@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}viniciusgribas@gmail.com}}
+        \kern 0.5 cm
+        \mbox{\hrefWithoutArrow{tel:+55-61-98165-7050}{{\footnotesize\faPhone*}\hspace*{0.13cm}+55 61 98165 7050}}
+        \kern 0.5 cm
+        \mbox{\hrefWithoutArrow{https://viniciusgribas.github.io/}{{\footnotesize\faLink}\hspace*{0.13cm}viniciusgribas.github.io}}
+        \kern 0.5 cm
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/vinicius-guerra-e-ribas}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}vinicius-guerra-e-ribas}}
+        \kern 0.5 cm
+        \mbox{\hrefWithoutArrow{https://github.com/viniciusgribas}{{\footnotesize\faGithub}\hspace*{0.13cm}viniciusgribas}}
+        \kern 0.5 cm
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+
+    \section{Education}
+
+
+
+        
+        \begin{threecolentry}{\textbf{MBA}}{
+            Apr. 2024 to Jan. 2026
+        }
+            \textbf{Universidade de São Paulo}, Software Engineering
+            \begin{highlights}
+                \item 100\% scholarship for additional specializations at Coursera
+                \item \textbf{Coursework:} Full Stack Development, Data and Business, Software Development, Management, and Cloud
+            \end{highlights}
+        \end{threecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{threecolentry}{\textbf{MBA}}{
+            May 2021 to Jan. 2023
+        }
+            \textbf{Universidade de São Paulo}, Data Science and Analytics
+            \begin{highlights}
+                \item Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense
+                \item \textbf{Coursework:} Statistics, Supervised and Unsupervised Machine Learning Models, Trends in Data Science and Analytics, Big Data in the Business Environment
+            \end{highlights}
+        \end{threecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{threecolentry}{\textbf{BSc}}{
+            Jan. 2014 to May 2021
+        }
+            \textbf{Universidade de Brasília}, Energy Engineering
+            \begin{highlights}
+                \item Final thesis approved with top marks by the University of Brasília, used in voluntary data science work to combat COVID-19 in Brazil.
+                \item \textbf{Coursework:} Renewable Energy, Technology, Innovation, Sustainability, and Energy Systems Engineering
+            \end{highlights}
+        \end{threecolentry}
+
+
+    
+    \section{Work Experience}
+
+
+
+        
+        \begin{twocolentry}{
+            SP, Brazil (Remote)
+
+        Aug. 2023 to present
+        }
+            \textbf{Raizen Energia S.A.}, Data Engineer, Analytics Engineering
+            \begin{highlights}
+                \item Gathered business requirements from various departments (Power, Finance, Logistics, Software, and IT) and developed a cloud solution to democratize and enhance data accessibility within the company.
+                \item Developed data quality solutions by monitoring completeness and integrity parameters, implementing sanitation rules, and enriching SSOT databases within a Data Lake House architecture.
+                \item Corrected over 38,000 active customer accounts, enabling the implementation of marketing rules for billing and new sign-ups.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            SP, Brazil (Remote)
+
+        June 2022 to Aug. 2023
+        }
+            \textbf{Raizen Energia S.A.}, Data Engineer, ETL Pipelines Development
+            \begin{highlights}
+                \item Collected business requirements from various departments (Power, Finance, Logistics, Software, and IT) and developed cloud solutions to democratize and enhance data accessibility within the company.
+                \item Developed a data solution that extracted information from all consumers in Brazil, and enriched the data using a Google API and a Machine Learning algorithm, enabling the identification of high-scoring leads.
+                \item Architected, implemented, orchestrated, and monitored over 20 data pipelines, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            MS, Brazil (Hybrid)
+
+        Mar. 2021 to June 2022
+        }
+            \textbf{Energisa S.A.}, Business Intelligence Analyst
+            \begin{highlights}
+                \item Developed algorithms to iterate with analyses in Excel, enhancing data warehousing and analytics capabilities.
+                \item Employed data visualization tools for strategic market analysis and data-driven decision-making.
+                \item Automated data extraction and transformation processes, reducing manual work by 75\%.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            DF, Brazil (On-site)
+
+        Jan. 2019 to Mar. 2021
+        }
+            \textbf{Brazilian Electricity Regulatory Agency (ANEEL)}, Data Scientist, Intern
+            \begin{highlights}
+                \item Demonstrated exceptional time management in data projects and ensured data security in compliance with governance standards.
+                \item Played a pivotal role in assisting the Brazilian government in developing a comprehensive database of all energy customers in Brazil.
+                \item Received formal recognition from the Brazilian government for outstanding work in the data science field.
+            \end{highlights}
+        \end{twocolentry}
+
+
+
+    
+    \section{Awards}
+
+
+
+        
+        \begin{twocolentry}{
+            2024
+        }
+            \textbf{Santander Open Academy Scholarship}
+            \begin{highlights}
+                \item Won a full scholarship to a software development school focused on Front-End, Backend, DevOps, Data Engineering, and Data Science.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            2022 to present
+        }
+            \textbf{Upwork Top Rated Freelancer with 100\% Job Success and 5-Star Rating}
+            \begin{highlights}
+                \item Achieved a 100\% job success rate and a 5-star rating on Upwork, with over 100\% project completion.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            2023
+        }
+            \textbf{Raizen Energia S.A. Exceptional Performance Recognition}
+            \begin{highlights}
+                \item Recognized for exceptional performance in culture, results-oriented work, and teamwork.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            2023
+        }
+            \textbf{Universidade de São Paulo Top Grade Recognition}
+            \begin{highlights}
+                \item Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            2021
+        }
+            \textbf{Brazilian Electricity Regulatory Agency (ANEEL) Recommendation Letter}
+            \begin{highlights}
+                \item Received formal recognition from the Brazilian government for outstanding work in the data science field.
+            \end{highlights}
+        \end{twocolentry}
+
+
+
+    
+    \section{Certificates And Volunteering}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Certificates}
+            \begin{highlights}
+                \item Prompt Engineering for Developers Certificate - DeepLearning.AI
+                \item Customer-Centric IT Strategy Certificate - University of Virginia
+                \item Microsoft Azure for Data Engineers Certificate - Microsoft
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Volunteering}
+            \begin{highlights}
+                \item Litter-of-Light (ONG) Technology Volunteer for low-income communities in Brazil
+                \item COVID-19 Data Science Volunteer for the Brazilian government
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Skills}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Data Engineering:} Spark, SQL, Big Data, ETL, API, Python
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Data Science and Analytics:} Machine Learning, Prompt Engineering, Data Mining, Business Intelligence, Statistics, Data Visualization, R
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Software Development and IT Operations (DevOps):} System Design, CI/CD, Cloud Computing, Containers, Kubernetes, Monitoring, Data Governance
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Soft Skills:} Leadership, Communication, Problem-Solving, Teamwork, Customer Focus, Adaptability, Decision-Making, Time Management, Strategic Thinking
+        \end{onecolentry}
+
+
+    
+
+\end{document}

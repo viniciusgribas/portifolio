@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title_pt": "Arquitetura de Dados: O Lakehouse como Ferramenta de Armazenamento de Dados",
+      "title_en": "Data Architecture: The Lakehouse as a Data Storage Tool",
+      "excerpt_pt": "Neste artigo, exploramos a arquitetura de dados Lakehouse e como ela pode ser uma solução eficaz para o armazenamento de dados.",
+      "excerpt_en": "In this article, we explore the Lakehouse data architecture and how it can be an effective solution for data storage.",
+      "tags_pt": ["arquitetura", "dados", "lakehouse"],
+      "tags_en": ["architecture", "data", "lakehouse"],
+      "url": "https://medium.com/@viniciusgribas/arquitetura-de-dados-o-lakehouse-como-ferramenta-de-armazenamento-de-dados-d7ce87ddd922",
+      "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/0*ASeOlK8JiaRiBcvL",
+      "available_pt": true,
+      "available_en": false, 
+      "icon": "public/medium-icon-svgrepo-com.svg"
+    }
+  ]
+}
