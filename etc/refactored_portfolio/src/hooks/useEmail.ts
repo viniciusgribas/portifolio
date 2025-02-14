@@ -1,48 +1,39 @@
-import { useState } from 'react';
-import { EmailService } from '../api/email.service';
-import { EmailPayload, EmailResponse } from '../types/email.types';
 
-interface EmailHookReturn {
-    sendEmail: (payload: EmailPayload) => Promise<void>;
-    isLoading: boolean;
-    error: string | null ;
-    success: boolean;
-}
+import { useState } from 'react';
+import emailService from '@/api/email.services';
+import type { EmailPayload } from '@/types/email.types';
 
 /**
- * Custom hook for handling email operations
- * @returns Object containing email sending function and status
+ * Custom hook for sending emails using EmailJS service.
+ * @returns {{
+ *   sendEmail: (payload: EmailPayload) => Promise<void>;
+ *   isLoading: boolean;
+ *   error: Error | null;
+ * }}
  */
+const useEmail = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
 
-export const useEmail = (): EmailHookReturn => {
-    const [ isLoading , setIsLoading ] = useState(false);
-    const [error , setError ] = useState<string | null>(null);
-    const [success, setSuccess] = useState(false);
+  /**
+   * Sends an email using the EmailJS service.
+   * @param {EmailPayload} payload - The email payload.
+   * @returns {Promise<void>}
+   */
+  const sendEmail = async (payload: EmailPayload): Promise<void> => {
+    setIsLoading(true);
+    setError(null);
 
-    const sendEmail = async (payload: EmailPayload): Promise<void> =>{
-        setIsLoading(true);
-        setError(null);
-        setSuccess(false);
+    try {
+      await emailService.send(payload);
+    } catch (error) {
+      setError(error as Error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-        try{
-            const emailService = EmailService.getInstance();
-            const response = await emailService.sendEmail(payload);
+  return { sendEmail, isLoading, error };
+};
 
-            if (response.success){
-                setSuccess(true);  
-            } else {
-                setError(response.message);                
-            }
-        }catch(error){
-                setError(error instanceof Error ? error.message: 'Failed to send Email');
-            } finally{
-                setIsLoading(false);
-            }
-        };
-        return {
-            sendEmail,
-            isLoading,
-            error,
-            success
-        };
-    };
+export default useEmail;
