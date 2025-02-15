@@ -20,6 +20,7 @@ export default {
         success: '#057642',    // Green for success states
         error: '#CC1016',      // Red for error states
         warning: '#C37D16',    // Orange for warning states
+        linkBlue: '#0077B5',   // LinkedIn link color
       },
     },
   },
