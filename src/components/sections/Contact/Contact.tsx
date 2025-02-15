@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FiLinkedin, FiGithub } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import ContactFormModal from './ContactFormModal';
 
@@ -22,15 +22,20 @@ const Contact: FC = () => {
     {
       name: 'GitHub',
       icon: <FiGithub size={35} />,
-      url: 'https://github.com/viniciusGuerras',
+      url: 'https://github.com/viniciusgribas',
       color: 'hover:text-[#333]'
     },
     {
       name: 'WhatsApp',
       icon: <FaWhatsapp size={35} />,
-      url: 'https://wa.me/+5511999999999', // Replace with your WhatsApp number
+      url: 'https://wa.me/+5561981657050', // Replace with your WhatsApp number
       color: 'hover:text-[#25D366]'
-    }
+    },
+    { name: 'Email',
+      icon: <FiMail size={35} />,
+      url: 'mailto:viniciusgribas@gmail.com',
+      color: 'hover:text-[#EA4335]'
+    }    
   ];
 
   return (
