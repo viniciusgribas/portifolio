@@ -34,7 +34,7 @@ const Hero = () => {
       >
         {/* Main heading with fade-in animation */}
         <motion.h1
-          className="text-4xl font-sans md:text-6xl font-bold mb-6 text-gray-900"
+          className="text-xl font-mono md:text-3xl font-bold mb-6 text-gray-900"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}

@@ -5,7 +5,7 @@
     },
     "hero": {
       "title": "Welcome to My Portfolio",
-      "greeting": "Hi, I'm Vinicius",
+      "greeting": "Hi There! I'm Vinicius.",
       "intro": "I specialize in",
       "specialties": [
         "Data Engineering",
@@ -17,15 +17,19 @@
       ],
       "stats": {
         "projects": {
-          "icon": "Workflow",
+          "icon" :"Workflow",
           "number": "50+",
-          "label": "Projects and Data Pipelines"
+          "label": "Projects & Data Pipelines"
         },
         "countries": {
-          "icon": "Globe",
-          "icon": "PencilRuler",
+          "icon" :"Globe",
+          "number": "10+",
+          "label": "Worldwide Projects"
+        },
+        "experience": {
+          "icon" :"PencilRuler",
           "number": "5+",
-          "label": "Years in Engineering and Data"
+          "label": "Years in Engineering & Data"
         }
       },
       "description": "As a software and data engineer, I am dedicated to crafting innovative, data-driven solutions that tackle complex challenges across various industries. My expertise lies in developing scalable and efficient products that drive organizational success."
