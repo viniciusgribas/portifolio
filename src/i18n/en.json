@@ -13,7 +13,8 @@
       "Artificial Intelligence",
       "Software Engineering",
       "Software Development",
-      "Web Development"
+      "Web Development",
+      "Business Intelligence"
     ],
     "stats": {
       "projects": {
@@ -190,20 +191,76 @@
     ]
   },
   "contact": {
-    "title": "Contact",
-    "description": "Let's connect! Click below to send me a message.",
+    "title": "Let's Work Together",
+    "description": "Ready to start a project? Let me know what you have in mind!",
+    "availability": "Available for new projects",
+    "responseTime": "Usually responds within 2 business days",
+    "cta": "I want a project!",
+    
     "form": {
-      "title": "Fill out the form to download my CV",
-      "name": "Your Name",
-      "email": "Your Email",
-      "message": "Your Message",
-      "submit": "Send Message"
+      "title": "Project Request Form",
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your full name",
+        "error": "Please enter a valid name (letters only)"
+      },
+      "email": {
+        "label": "Your Email",
+        "placeholder": "Enter your email address",
+        "error": "Please enter a valid email address"
+      },
+      "phone": {
+        "label": "Phone Number (Optional)",
+        "placeholder": "+1 (234) 567-8900",
+        "error": "Please enter a valid phone number"
+      },
+      "country": {
+        "label": "Your Country",
+        "placeholder": "Select your country"
+      },
+      "preferredLanguage": {
+        "label": "Preferred Communication Language",
+        "options": {
+          "en": "English",
+          "pt": "Portuguese"
+        }
+      },
+      "projectTypes": {
+        "label": "Project Type(s)",
+        "description": "Select all that apply",
+        "options": {
+          "dataEngineering": "Data Engineering",
+          "dataScience": "Data Science",
+          "devops": "DevOps & Cloud",
+          "softwareDev": "Software Development",
+          "webDev": "Web Development",
+          "ai": "Artificial Intelligence"
+        }
+      },
+      "details": {
+        "label": "Project Details",
+        "placeholder": "Tell me about your project idea (max 500 characters)",
+        "error": "Please provide project details (max 500 characters)"
+      },
+      "contactPreference": {
+        "label": "Preferred Contact Method",
+        "options": {
+          "email": "Email",
+          "phone": "Phone",
+          "whatsapp": "WhatsApp",
+          "linkedin": "LinkedIn"
+        }
+      },
+      "submit": "Submit Project Request",
+      "success": "Thank you! I'll review your project request and get back to you soon.",
+      "error": "Something went wrong. Please try again.",
+      "successTitle": "Obrigado! 🎉",
+      "successMessage": "Sua solicitação de projeto foi recebida com sucesso. Agradeço seu interesse em trabalharmos juntos!",
+      "responseTime": "Analisarei sua solicitação e retornarei em até 2 dias úteis."
     },
-    "socialTitle": "Find me here",
-    "info": "Reach out via these social links:",
-    "downloadCV": "Hire me!",
-    "successMessage": "Message sent successfully! Download starting...",
-    "errorMessage": "Failed to send the message. Please try again later.",
-    "errorIncompleteFields": "Please fill out all fields before submitting."
+    "cta": "I want a project!",
+    "socialTitle": "Or connect with me here:",
+    "timezone": "Current time {{time}}"
+    
   }
 }

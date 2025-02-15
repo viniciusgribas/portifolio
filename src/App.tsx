@@ -8,8 +8,8 @@ const App: FC = () => {
     <Router>
       <div className="app">
         <Navbar />
-        {/* i want a biger space between the navbar and the hero section */}
-        {/* <div className="h-16"></div> */}
+        {/* Added responsive spacer: visible on mobile only. */}
+        <div className="block sm:hidden h-16"></div>
         <div className="container mx-auto">
           <div className="content">
           <section id="hero">
