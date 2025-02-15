@@ -1,0 +1,165 @@
+{    "hero": {
+      "greeting": "Olá, me chamo Vinicius Guerra e Ribas",
+      "intro": "Especialista em",
+      "specialties": [
+        "Engenharia de Dados",
+        "Ciência de Dados",
+        "Inteligência Artificial",
+        "Engenharia de Software",
+        "Desenvolvimento de Software",
+        "Desenvolvimento Web"
+      ],
+      "stats": {
+        "projects": {
+          "number": "50+",
+          "label": "Projetos e Pipelines de Dados"
+        },
+        "countries": {
+          "number": "10+",
+          "label": "Projetos pelo mundo"
+        },
+        "experience": {
+          "number": "5+",
+          "label": "Anos em Engenharia e Dados"
+        }
+      },
+      "description": "Como engenheiro de software e dados, dedico-me a criar soluções inovadoras e orientadas por dados que enfrentam desafios complexos em diversos setores. Minha especialidade está em desenvolver produtos escaláveis e eficientes que impulsionam o sucesso organizacional."
+    },
+    "navbar": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato",
+      "openMenu": "Abrir menu",
+      "logo": "</VGR>"
+    },
+    "about": {
+    "title": "Sobre Mim",
+    "description": "Com uma base sólida em engenharia de dados, ciência de dados, inteligência artificial e desenvolvimento de software, crio tecnologia que impulsiona organizações e melhora vidas. Meu foco é fornecer soluções escaláveis, eficientes e inclusivas que atendem a diversas necessidades.",
+    "description2": "Atualmente, sou desenvolvedor de software especializado em dados e inteligência artificial. Utilizo as melhores práticas em computação em nuvem, desenvolvimento seguro e operacional, arquitetura de software, engenharia de dados e inteligência artificial para criar soluções robustas e escaláveis.",
+    "description3": "Estou sempre buscando novos desafios e oportunidades para aprender e crescer, acreditando que colaboração e compartilhamento de conhecimento são essenciais para o sucesso.",
+    "expertise": "Áreas de Especialização & Tecnologias",
+    "skills": {
+      "instructions": "Clique para expandir/colapsar habilidades",
+      "expand": "Clique para ver habilidades",
+      "collapse": "Clique para esconder habilidades",
+      "categories": {
+        "dataEngineering": "Engenharia de Dados",
+        "dataScience": "Ciência de Dados",
+        "devOps": "DevOps & Núvem",
+        "software": "Desenvolvimento de Software",
+        "ai": "Inteligência Artificial",
+        "bi": "Inteligência de Negócios"
+      }
+    }
+  },
+"projects": {
+    "title": "Projetos em Destaque",
+    "description": "Conheça alguns dos meus projetos recentes e colaborações com clientes. Cada projeto representa um desafio único resolvido através de soluções inovadoras.",
+    "viewProject": "Ver Projeto",
+    "privateProject": "(Projeto privado - Código fonte e detalhes protegidos por NDA)",
+    "autoScroll": "Rolagem automática • Passe o mouse para pausar",
+    "hoverPause": "Pausado • Retire o mouse para continuar",
+    "items": [
+      {
+        "id": "nlpProject",
+        "title": "Mineração de Texto e Análise NLP do Setor Energético",
+        "description": "Desenvolveu soluções avançadas de mineração de texto e processamento de linguagem natural para análise do setor energético, implementando raspagem de web e análise de sentimento em fontes de dados de notícias e governos.",
+        "tech": ["Python", "NLP", "Machine Learning", "Web Scraping", "Plotly", "Sentiment Analysis"],
+        "rating": 5.00,
+        "review": "Com o objetivo de aplicar conhecimentos em Text Mining, Análise de Sentimentos, PLN, Machine Learning, Crawlers e Web Scraping, foram desenvolvidas soluções de dados com tópicos relevantes para o setor energético. Essas soluções extraem dados dos sites da CNN Brasil (com foco no cenário energético internacional) e sites de agências governamentais como ANP, ANEEL e MME (com foco no cenário energético nacional). Uma vez extraídos, os dados são manipulados e adicionados a um dataframe, e finalmente apresentados via Plotly e Wordcloud, como mostrado nas figuras abaixo.",
+        "source": "USP - Universidade de São Paulo",
+        "date": "Outubro, 2022",
+        "image": "/assets/cloud_view.png",
+        "url": "https://www.upwork.com/freelancers/~01705d8c35f170c499?p=1636913026235174912"
+      },
+      {
+        "id": "uspProject",
+        "title": "Análise do Sistema de Geração Elétrica Brasileiro",
+        "description": "Conduziu análise exploratória de dados abrangente do sistema elétrico brasileiro, criando visualizações interativas e análise espacial usando Python e bibliotecas avançadas.",
+        "tech": ["Python", "Data Analysis", "Plotly", "GeoDataFrame", "Data Visualization"],
+        "rating": 5.00,
+        "review": "O projeto consiste em uma análise exploratória de dados. O objetivo desta análise é visualizar o sistema de geração elétrica brasileiro de forma diagramática e espacial, extraindo insights. Para isso, foi utilizado um dataframe do tipo GeoDataFrame e, principalmente, o poder da biblioteca Plotly Express otimizada para a linguagem Python.",
+        "source": "USP - Universidade de São Paulo",
+        "date": "Janeiro, 2023",
+        "image": "/assets/bar_charts_1.png",
+        "url": "https://www.upwork.com/freelancers/viniciusg?p=1636904767317643264"
+      },
+      {
+        "id": "aneelProject",
+        "title": "Projeto de Engenharia de Dados ANEEL",
+        "description": "Desenvolveu soluções inovadoras de análise de dados para a Agência Nacional de Energia Elétrica (ANEEL), focando em dados abertos e ferramentas de visualização para o setor energético.",
+        "tech": ["Python", "Data Engineering", "Streamlit", "Data Visualization"],
+        "rating": 5.00,
+        "review": "Com grande satisfação, recomendo Vinicius Guerra e Ribas. Durante sua graduação em engenharia, destacou-se em seu estágio na ANEEL e, posteriormente, concluiu uma pós-graduação em ciência de dados, evidenciada por um notável trabalho de conclusão de curso que utilizou dados da ANEEL de maneira inovadora. Além disso, suas contribuições significativas para aprimorar os dados abertos da ANEEL refletem seu comprometimento.",
+        "source": "USP - Universidade de São Paulo",
+        "date": "1 de Dezembro, 2023",
+        "image": "/assets/aneel_project.png",
+        "url": "https://vinici-analise-geracao-iipydashboard-geracao-brasil-app-1w9whk.streamlit.app/"
+      },
+      {
+        "id": "seniorPython",
+        "title": "Desenvolvedor Python Sênior - Extração de Dados",
+        "description": "Liderou o desenvolvimento de sistemas de extração de dados e infraestrutura backend, implementando soluções eficientes para requisitos complexos de processamento de dados.",
+        "tech": ["Python", "AWS", "Data Engineering", "Backend"],
+        "rating": 5.00,
+        "review": "Tudo foi ótimo, posso sinceramente recomendar o Vinicius!",
+        "source": "Upwork",
+        "date": "14 de Abril, 2024 - 30 de Maio, 2024",
+        "private": true
+      },
+      {
+        "id": "dataScientist",
+        "title": "Projeto ETL de Cientistas/Engenheiros de Dados",
+        "description": "Desenvolveu pipelines ETL e modelos de machine learning usando serviços AWS, criando soluções escaláveis de processamento de dados.",
+        "tech": ["ETL", "ML", "Python", "AWS"],
+        "rating": 5.00,
+        "review": "Vinicius fez um ótimo trabalho nas tarefas de ETL e ML usando as capacidades da Amazon Web Services (AWS). Estamos felizes em trabalhar com este freelancer novamente.",
+        "source": "Upwork",
+        "date": "14 de Junho, 2023 - 26 de Junho, 2023",
+        "private": true
+      },
+      {
+        "id": "ibgeProject",
+        "title": "Projeto de Dados IBGE",
+        "description": "Criou pipelines de processamento de dados estatísticos do governo brasileiro, garantindo transformação precisa e eficiente dos dados.",
+        "tech": ["Python", "Data Engineering", "ETL"],
+        "rating": 5.00,
+        "review": "O trabalho foi realizado com profissionalismo e dentro do prazo.",
+        "source": "Workana",
+        "date": "17 de Março, 2023 - 24 de Abril, 2023",
+        "private": true
+      },
+      {
+        "id": "electricityMaps",
+        "title": "Mapas de Rede de Distribuição de Energia",
+        "description": "Desenvolveu ferramentas de visualização para redes de distribuição de energia elétrica, criando mapas interativos e sistemas de análise de dados.",
+        "tech": ["Python", "GIS", "Data Visualization"],
+        "rating": 5.00,
+        "review": "O trabalho do Vinicius foi incrível. Muito completo e baseado em fontes confiáveis de informação, conseguindo finalizar o trabalho com uma velocidade impressionante e ótima qualidade.",
+        "source": "Upwork",
+        "date": "13 de Novembro, 2022 - 15 de Novembro, 2022",
+        "image": "/assets/south_america_map.jpeg",
+        "url": "https://www.upwork.com/freelancers/viniciusg?p=1636909561297944576"
+      }
+    ]
+  },
+"contact": {
+  "title": "Contato",
+  "description": "Vamos nos conectar! Clique abaixo para baixar meu CV.",
+  "form": {
+    "title": "Preencha o formulário para baixar meu CV",
+    "name": "Seu Nome",
+    "email": "Seu Email",
+    "message": "Sua Mensagem",
+    "submit": "Enviar Mensagem"
+  },
+  "socialTitle": "Onde me encontrar",
+  "info": "Entre em contato por essas redes:",
+  "downloadCV": "Baixar meu CV",
+  "successMessage": "Mensagem enviada com sucesso! O download será iniciado.",
+  "errorMessage": "Falha ao enviar a mensagem. Tente novamente mais tarde.",
+  "errorIncompleteFields": "Por favor, preencha todos os campos antes de enviar."
+}
+    
+  }

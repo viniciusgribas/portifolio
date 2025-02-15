@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es6", // Specify ECMAScript target version
+      "module": "ESNext", // Specify module code generation
+      "strict": true, // Enable all strict type-checking options
+      "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+      "lib": ["dom", "dom.iterable","esnext"], // Specify library files to be included in the compilation
+      "skipLibCheck": true, // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+      "resolveJsonModule": true, // Enable resolution of import paths that contain JSON files
+      "baseUrl": "./src", // Base directory to resolve non-relative module names
+      "jsx": "react-jsx", // Enable JSX support
+      "paths": {
+        "@/*": ["*"] // Optional: Set up path aliases if needed
+      },
+      "types": ["vite/client"], 
+      "moduleResolution": "node" // Change module resolution to 'node'
+    },
+    "include": [
+      "src/**/*" // Include all files in the src directory
+    ],
+    "exclude": [
+      "node_modules", // Exclude node_modules
+      "**/*.spec.ts", // Exclude specific test files if needed
+      "**/*.test.ts" // Exclude specific test files if needed
+    ]
+  }

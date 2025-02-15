@@ -1,0 +1,156 @@
+cv:
+  name: Vinicius Guerra e Ribas
+  location: Rio de Janeiro - RJ, Brazil
+  email: viniciusgribas@gmail.com
+  phone: tel:+55 61 98165-7050
+  website: https://viniciusgribas.github.io
+  social_networks:
+    - network: LinkedIn
+      username: vinicius-guerra-e-ribas
+    - network: GitHub
+      username: viniciusgribas
+  sections:
+    # about:
+    #   Results-driven data engineer with a proven ability to design, develop, and implement robust data solutions. Expertise in software engineering, data science, and analytics enables me to translate complex business requirements into effective strategies and deliver impactful outcomes.
+    education:
+      - institution: Universidade de São Paulo
+        area: Software Engineering
+        degree: MBA
+        start_date: 2024-04
+        end_date: 2026-01
+        highlights:
+          - '100% scholarship for additional specializations at Coursera'
+          - '**Coursework:** Full Stack Development, Data and Business, Software Development, Management, and Cloud'
+      - institution: Universidade de São Paulo
+        area: Data Science and Analytics
+        degree: MBA
+        start_date: 2021-05
+        end_date: 2023-01
+        highlights:
+          - 'Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense'
+          - '**Coursework:** Statistics, Supervised and Unsupervised Machine Learning Models, Trends in Data Science and Analytics, Big Data in the Business Environment'
+      - institution: Universidade de Brasília
+        area: Energy Engineering
+        degree: BSc
+        start_date: 2014-01
+        end_date: 2021-05
+        highlights:
+          - 'Final thesis approved with top marks by the University of Brasília, used in voluntary data science work to combat COVID-19 in Brazil.'
+          - '**Coursework:** Renewable Energy, Technology, Innovation, Sustainability, and Energy Systems Engineering'
+    
+    work_experience:
+      - company: Raizen Energia S.A.
+        position: Data Engineer, Analytics Engineering
+        location: SP, Brazil (Remote)
+        start_date: 2023-08
+        end_date:
+        highlights:
+          - 'Gathered business requirements from various departments (Power, Finance, Logistics, Software, and IT) and developed a cloud solution to democratize and enhance data accessibility within the company.'
+          - 'Developed data quality solutions by monitoring completeness and integrity parameters, implementing sanitation rules, and enriching SSOT databases within a Data Lake House architecture.'
+          - 'Corrected over 38,000 active customer accounts, enabling the implementation of marketing rules for billing and new sign-ups.'
+      - company: Raizen Energia S.A.
+        position: Data Engineer, ETL Pipelines Development
+        location: SP, Brazil (Remote)
+        start_date: 2022-06
+        end_date: 2023-08
+        highlights:
+          - 'Collected business requirements from various departments (Power, Finance, Logistics, Software, and IT) and developed cloud solutions to democratize and enhance data accessibility within the company.'
+          - 'Developed a data solution that extracted information from all consumers in Brazil, and enriched the data using a Google API and a Machine Learning algorithm, enabling the identification of high-scoring leads.'
+          - 'Architected, implemented, orchestrated, and monitored over 20 data pipelines, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.'
+      - company: Energisa S.A.
+        position: Business Intelligence Analyst
+        location: MS, Brazil (Hybrid)
+        start_date: 2021-03
+        end_date: 2022-06
+        highlights:
+          - 'Developed algorithms to iterate with analyses in Excel, enhancing data warehousing and analytics capabilities.'
+          - 'Employed data visualization tools for strategic market analysis and data-driven decision-making.'
+          - 'Automated data extraction and transformation processes, reducing manual work by 75%.'
+      - company: Brazilian Electricity Regulatory Agency (ANEEL)
+        position: Data Scientist, Intern
+        location: DF, Brazil (On-site)
+        start_date: 2019-01
+        end_date: 2021-03
+        highlights:
+          - 'Demonstrated exceptional time management in data projects and ensured data security in compliance with governance standards.'
+          - 'Played a pivotal role in assisting the Brazilian government in developing a comprehensive database of all energy customers in Brazil.'
+          - 'Received formal recognition from the Brazilian government for outstanding work in the data science field.'
+    awards:
+      - name: Santander Open Academy Scholarship
+        date: 2024
+        highlights:
+          - 'Won a full scholarship to a software development school focused on Front-End, Backend, DevOps, Data Engineering, and Data Science.'
+      - name: Upwork Top Rated Freelancer with 100% Job Success and 5-Star Rating
+        start_date: 2022
+        end_date: 
+        highlights:
+          - 'Achieved a 100% job success rate and a 5-star rating on Upwork, with over 100% project completion.'
+      - name: Raizen Energia S.A. Exceptional Performance Recognition
+        date: 2023
+        highlights:
+          - 'Recognized for exceptional performance in culture, results-oriented work, and teamwork.'
+      - name: Universidade de São Paulo Top Grade Recognition
+        date: 2023
+        highlights:
+          - 'Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense.'
+      - name: Brazilian Electricity Regulatory Agency (ANEEL) Recommendation Letter
+        date: 2021
+        highlights:
+          - 'Received formal recognition from the Brazilian government for outstanding work in the data science field.'
+    certificates_and_volunteering:
+      - name: 'Certificates'
+        highlights:
+          - 'Prompt Engineering for Developers Certificate - DeepLearning.AI'
+          - 'Customer-Centric IT Strategy Certificate - University of Virginia'
+          - 'Microsoft Azure for Data Engineers Certificate - Microsoft'
+
+      - name: 'Volunteering'
+        highlights:
+          - 'Litter-of-Light (ONG) Technology Volunteer for low-income communities in Brazil'
+          - 'COVID-19 Data Science Volunteer for the Brazilian government'
+    skills:
+      - label: Data Engineering
+        details: Spark, SQL, Big Data, ETL, API, Python
+      - label: Data Science and Analytics
+        details: Machine Learning, Prompt Engineering, Data Mining, Business Intelligence, Statistics, Data Visualization, R
+      - label: Software Development and IT Operations (DevOps)
+        details: System Design, CI/CD, Cloud Computing, Containers, Kubernetes, Monitoring, Data Governance
+      - label: Soft Skills
+        details: Leadership, Communication, Problem-Solving, Teamwork, Customer Focus, Adaptability, Decision-Making, Time Management, Strategic Thinking
+design:
+  theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#004f90'
+  disable_external_link_icons: false
+  disable_page_numbering: false
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: false
+  last_updated_date_style: Last updated in TODAY
+  header_font_size: 30 pt
+  text_alignment: justified
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+      education_degree_width: 1 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+  show_timespan_in:
+    - Experience

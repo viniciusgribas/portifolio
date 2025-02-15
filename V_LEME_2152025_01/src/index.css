@@ -1,0 +1,134 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply bg-background text-textPrimary;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-textPrimary;
+  }
+
+  a {
+    @apply text-primary hover:text-secondary;
+  }
+
+  nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure the navbar is positioned relative to its container */
+    z-index: 10; /* Set a higher z-index to ensure it stays above the scrollbar */
+  }
+  
+}
+
+/* Custom component styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-secondary;
+  }
+
+  .btn-secondary {
+    @apply bg-accent-light text-white hover:bg-accent-dark;
+  }
+
+  .input {
+    @apply px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .transition-fast {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
+/* Add these styles to your index.css */
+
+/* Modern and beautiful scrollbar styles with white base and subtle gray details */
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF; /* Pure white background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0E0E0; /* Light gray thumb */
+  border-radius: 10px;
+  border: 3px solid #FFFFFF; /* White padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B0B0B0; /* Slightly darker gray on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E0E0E0 #FFFFFF; /* Light gray thumb and white track */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* For elements that should show scrollbar only on hover */
+.show-scrollbar-on-hover {
+  scrollbar-width: none;
+}
+
+.show-scrollbar-on-hover::-webkit-scrollbar {
+  display: none;
+}
+
+.show-scrollbar-on-hover:hover {
+  scrollbar-width: thin;
+}
+
+.show-scrollbar-on-hover:hover::-webkit-scrollbar {
+  display: block;
+}
+
+/* Optional: Custom scrollbar colors for dark mode if you need it */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #333333; /* Dark gray background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555555; /* Medium gray thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777777; /* Lighter gray on hover */
+  }
+
+  * {
+    scrollbar-color: #555555 #333333; /* Medium gray thumb and dark gray track */
+  }
+}
