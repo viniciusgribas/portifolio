@@ -215,6 +215,6 @@
       },
       "cta": "Quero um projeto!",
       "socialTitle": "Ou conecte-se comigo aqui:",
-      "timezone": "Horário atual em {{timezone}}: {{time}}"
+      "timezone": "Horário atual {{time}}"
     }
 }
