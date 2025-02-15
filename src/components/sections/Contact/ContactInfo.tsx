@@ -22,14 +22,14 @@ const ContactInfo: React.FC<Props> = ({ openModal }) => {
     {
       name: 'GitHub',
       icon: <FiGithub size={35} />,
-      url: 'https://github.com/viniciusGuerras',
+      url: 'https://github.com/viniciusgribas',
       color: 'hover:text-[#333]',
       delay: 0.2
     },
     {
       name: 'WhatsApp',
       icon: <FaWhatsapp size={35} />,
-      url: 'https://wa.me/+5511999999999', // Replace with your WhatsApp number
+      url: 'https://wa.me/+5561981657050', // Replace with your WhatsApp number
       color: 'hover:text-[#25D366]',
       delay: 0.3
     }
