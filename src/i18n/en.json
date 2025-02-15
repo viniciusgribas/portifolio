@@ -1,48 +1,49 @@
 {
-    "languageChanger": {
-      "changeLanguage": "Change language",
-      "tooltip": "Switch language"
-    },
-    "hero": {
-      "title": "Welcome to My Portfolio",
-      "greeting": "Hi There! I'm Vinicius.",
-      "intro": "I specialize in",
-      "specialties": [
-        "Data Engineering",
-        "Data Science",
-        "Artificial Intelligence",
-        "Software Engineering",
-        "Software Development",
-        "Web Development"
-      ],
-      "stats": {
-        "projects": {
-          "icon" :"Workflow",
-          "number": "50+",
-          "label": "Projects & Data Pipelines"
-        },
-        "countries": {
-          "icon" :"Globe",
-          "number": "10+",
-          "label": "Worldwide Projects"
-        },
-        "experience": {
-          "icon" :"PencilRuler",
-          "number": "5+",
-          "label": "Years in Engineering & Data"
-        }
+  "languageChanger": {
+    "changeLanguage": "Change language",
+    "tooltip": "Switch language"
+  },
+  "hero": {
+    "title": "Welcome to My Portfolio",
+    "greeting": "Hi There! I'm Vinicius.",
+    "intro": "I specialize in",
+    "specialties": [
+      "Data Engineering",
+      "Data Science",
+      "Artificial Intelligence",
+      "Software Engineering",
+      "Software Development",
+      "Web Development",
+      "Business Intelligence"
+    ],
+    "stats": {
+      "projects": {
+        "icon": "Workflow",
+        "number": "50+",
+        "label": "Projects & Data Pipelines"
       },
-      "description": "As a software and data engineer, I am dedicated to crafting innovative, data-driven solutions that tackle complex challenges across various industries. My expertise lies in developing scalable and efficient products that drive organizational success."
+      "countries": {
+        "icon": "Globe",
+        "number": "10+",
+        "label": "Worldwide Projects"
+      },
+      "experience": {
+        "icon": "PencilRuler",
+        "number": "5+",
+        "label": "Years in Engineering & Data"
+      }
     },
-    "navbar": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact",
-      "openMenu": "Open menu",
-      "logo": "<VGR>"
-    },
-    "about": {
+    "description": "As a software and data engineer, I am dedicated to crafting innovative, data-driven solutions that tackle complex challenges across various industries. My expertise lies in developing scalable and efficient products that drive organizational success."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "logo": "<VGR>"
+  },
+  "about": {
     "title": "About Me",
     "description": "With a strong foundation in data engineering, data science, AI, and software development, I create technology that empowers organizations and enhances lives. My focus is on delivering scalable, efficient, and inclusive solutions tailored to diverse needs.",
     "description2": "Currently, I am a software developer specializing in data and AI. I use best practices in Cloud Computing, DevSecOps, Software Architecture, Data Engineering, and Artificial Intelligence to create robust and scalable solutions.",
@@ -60,10 +61,9 @@
         "ai": "Artificial Intelligence",
         "bi": "Business Intelligence"
       }
-
     }
   },
-"projects": {
+  "projects": {
     "title": "Featured Projects",
     "description": "Take a look at some of my recent projects and client collaborations. Each project represents a unique challenge solved through innovative solutions.",
     "viewProject": "View Project",
@@ -75,7 +75,14 @@
         "id": "nlpProject",
         "title": "Energy Sector Text Mining & NLP Analysis",
         "description": "Developed advanced text mining and NLP solutions for energy sector analysis, implementing web scraping and sentiment analysis on news and government data sources.",
-        "tech": ["Python", "NLP", "Machine Learning", "Web Scraping", "Plotly", "Sentiment Analysis"],
+        "tech": [
+          "Python",
+          "NLP",
+          "Machine Learning",
+          "Web Scraping",
+          "Plotly",
+          "Sentiment Analysis"
+        ],
         "rating": 5.00,
         "review": "In order to apply Text Mining, Sentiment Analysis, NLP, Machine Learning, Crawlers, and Web Scraping knowledge, data solutions were developed with topics relevant to the energy sector. These solutions scrape data from CNN Brazil websites (with a focus on the international energy scenario) and government agency websites such as ANP, ANEEL, and MME (with a focus on the national energy scenario). Once scraped, the data is manipulated and added to a dataframe, and finally presented via Plotly and Wordcloud, as shown in the figures below.",
         "source": "USP - Universidade de São Paulo",
@@ -87,7 +94,13 @@
         "id": "uspProject",
         "title": "Brazilian Electric Generation System Analysis",
         "description": "Conducted comprehensive exploratory data analysis of the Brazilian electric generation system, creating interactive visualizations and spatial analysis using Python and advanced libraries.",
-        "tech": ["Python", "Data Analysis", "Plotly", "GeoDataFrame", "Data Visualization"],
+        "tech": [
+          "Python",
+          "Data Analysis",
+          "Plotly",
+          "GeoDataFrame",
+          "Data Visualization"
+        ],
         "rating": 5.00,
         "review": "The project consists of an exploratory data analysis. The objective of this analysis is to visualize the Brazilian electric generation system in a diagrammatic and spatial way, extracting insights. For this, a dataframe of the GeoDataFrame type was used and, mainly, the power of the Plotly Express library optimized for the Python language.",
         "source": "USP - Universidade de São Paulo",
@@ -99,7 +112,12 @@
         "id": "aneelProject",
         "title": "ANEEL Data Engineering Project",
         "description": "Developed innovative data analysis solutions for the Brazilian Electricity Regulatory Agency (ANEEL), focusing on open data and energy sector visualization tools.",
-        "tech": ["Python", "Data Engineering", "Streamlit", "Data Visualization"],
+        "tech": [
+          "Python",
+          "Data Engineering",
+          "Streamlit",
+          "Data Visualization"
+        ],
         "rating": 5.00,
         "review": "With great satisfaction, I recommend Vinicius Guerra e Ribas. During his engineering graduation, he stood out in his internship at ANEEL and later completed a postgraduate degree in data science, evidenced by a notable course completion work that used ANEEL data in an innovative way. Additionally, his significant contributions to improving ANEEL's open data reflect his commitment.",
         "source": "USP - Universidade de São Paulo",
@@ -111,7 +129,12 @@
         "id": "seniorPython",
         "title": "Senior Python Developer - Data Extraction",
         "description": "Led the development of data extraction systems and backend infrastructure, implementing efficient solutions for complex data processing requirements.",
-        "tech": ["Python", "AWS", "Data Engineering", "Backend"],
+        "tech": [
+          "Python",
+          "AWS",
+          "Data Engineering",
+          "Backend"
+        ],
         "rating": 5.00,
         "review": "Everything went great, I can sincerely recommend Vinicius!",
         "source": "Upwork",
@@ -122,7 +145,12 @@
         "id": "dataScientist",
         "title": "Data Scientists/Engineers ETL Project",
         "description": "Developed ETL pipelines and machine learning models using AWS services, creating scalable data processing solutions.",
-        "tech": ["ETL", "ML", "Python", "AWS"],
+        "tech": [
+          "ETL",
+          "ML",
+          "Python",
+          "AWS"
+        ],
         "rating": 5.00,
         "review": "Vinicius did a great job on ETL and ML tasks using Amazon Web Services (AWS) capabilities. We'd be happy to work with this freelancer again.",
         "source": "Upwork",
@@ -133,7 +161,11 @@
         "id": "ibgeProject",
         "title": "IBGE Data Project",
         "description": "Created data processing pipelines for Brazilian government statistical data, ensuring accurate and efficient data transformation.",
-        "tech": ["Python", "Data Engineering", "ETL"],
+        "tech": [
+          "Python",
+          "Data Engineering",
+          "ETL"
+        ],
         "rating": 5.00,
         "review": "The work was done with professionalism and on schedule.",
         "source": "Workana",
@@ -144,7 +176,11 @@
         "id": "electricityMaps",
         "title": "Electricity Distribution Network Maps",
         "description": "Developed visualization tools for electricity distribution networks, creating interactive maps and data analysis systems.",
-        "tech": ["Python", "GIS", "Data Visualization"],
+        "tech": [
+          "Python",
+          "GIS",
+          "Data Visualization"
+        ],
         "rating": 5.00,
         "review": "Vinicius's work was amazing. Very complete and based on reliable sources of information, managing to finish the work with an impressive speed and great quality.",
         "source": "Upwork",
@@ -154,21 +190,77 @@
       }
     ]
   },
-"contact": {
-  "title": "Contact",
-  "description": "Let's connect! Click below to send me a message.",
-  "form": {
-    "title": "Fill out the form to download my CV",
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Your Message",
-    "submit": "Send Message"
-  },
-  "socialTitle": "Find me here",
-  "info": "Reach out via these social links:",
-  "downloadCV": "Hire me!",
-  "successMessage": "Message sent successfully! Download starting...",
-  "errorMessage": "Failed to send the message. Please try again later.",
-  "errorIncompleteFields": "Please fill out all fields before submitting."
-}
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Ready to start a project? Let me know what you have in mind!",
+    "availability": "Available for new projects",
+    "responseTime": "Usually responds within 2 business days",
+    "cta": "I want a project!",
+    
+    "form": {
+      "title": "Project Request Form",
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your full name",
+        "error": "Please enter a valid name (letters only)"
+      },
+      "email": {
+        "label": "Your Email",
+        "placeholder": "Enter your email address",
+        "error": "Please enter a valid email address"
+      },
+      "phone": {
+        "label": "Phone Number (Optional)",
+        "placeholder": "+1 (234) 567-8900",
+        "error": "Please enter a valid phone number"
+      },
+      "country": {
+        "label": "Your Country",
+        "placeholder": "Select your country"
+      },
+      "preferredLanguage": {
+        "label": "Preferred Communication Language",
+        "options": {
+          "en": "English",
+          "pt": "Portuguese"
+        }
+      },
+      "projectTypes": {
+        "label": "Project Type(s)",
+        "description": "Select all that apply",
+        "options": {
+          "dataEngineering": "Data Engineering",
+          "dataScience": "Data Science",
+          "devops": "DevOps & Cloud",
+          "softwareDev": "Software Development",
+          "webDev": "Web Development",
+          "ai": "Artificial Intelligence"
+        }
+      },
+      "details": {
+        "label": "Project Details",
+        "placeholder": "Tell me about your project idea (max 500 characters)",
+        "error": "Please provide project details (max 500 characters)"
+      },
+      "contactPreference": {
+        "label": "Preferred Contact Method",
+        "options": {
+          "email": "Email",
+          "phone": "Phone",
+          "whatsapp": "WhatsApp",
+          "linkedin": "LinkedIn"
+        }
+      },
+      "submit": "Submit Project Request",
+      "success": "Thank you! I'll review your project request and get back to you soon.",
+      "error": "Something went wrong. Please try again.",
+      "successTitle": "Obrigado! 🎉",
+      "successMessage": "Sua solicitação de projeto foi recebida com sucesso. Agradeço seu interesse em trabalharmos juntos!",
+      "responseTime": "Analisarei sua solicitação e retornarei em até 2 dias úteis."
+    },
+    "cta": "I want a project!",
+    "socialTitle": "Or connect with me here:",
+    "timezone": "Current time {{time}}"
+    
+  }
 }
