@@ -254,9 +254,9 @@
       "submit": "Submit Project Request",
       "success": "Thank you! I'll review your project request and get back to you soon.",
       "error": "Something went wrong. Please try again.",
-      "successTitle": "Obrigado! 🎉",
-      "successMessage": "Sua solicitação de projeto foi recebida com sucesso. Agradeço seu interesse em trabalharmos juntos!",
-      "responseTime": "Analisarei sua solicitação e retornarei em até 2 dias úteis."
+      "successTitle": "Thank You! 🎉",
+      "successMessage": "Your project request has been received successfully. I appreciate your interest in working together!",
+      "responseTime": "I'll review your request and get back to you within 2 business days."
     },
     "cta": "I want a project!",
     "socialTitle": "Or connect with me here:",
