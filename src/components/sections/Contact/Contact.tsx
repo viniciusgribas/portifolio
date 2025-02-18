@@ -86,13 +86,6 @@ const Contact: FC = () => {
           </motion.button>
         </div>
 
-        {/* Auto-updating timezone */}
-        <div className="mt-8 text-center text-sm text-gray-500">
-          {t('contact.timezone', {
-            timezone: new Intl.DateTimeFormat().resolvedOptions().timeZone,
-            time: new Date().toLocaleTimeString()
-          })}
-        </div>
       </motion.div>
 
       {/* Project Request Modal */}

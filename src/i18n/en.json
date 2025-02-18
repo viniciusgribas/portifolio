@@ -1,12 +1,8 @@
 {
-  "languageChanger": {
-    "changeLanguage": "Change language",
-    "tooltip": "Switch language"
-  },
   "hero": {
-    "title": "Welcome to My Portfolio",
-    "greeting": "Hi There! I'm Vinicius.",
-    "intro": "I specialize in",
+    "title": "Welcome to My Portfolio 🚀",
+    "greeting": "👋 Hi There! I'm Vinicius. (:",
+    "intro": "I specialize in ⚙️",
     "specialties": [
       "Data Engineering",
       "Data Science",
@@ -33,7 +29,10 @@
         "label": "Years in Engineering & Data"
       }
     },
-    "description": "As a software and data engineer, I am dedicated to crafting innovative, data-driven solutions that tackle complex challenges across various industries. My expertise lies in developing scalable and efficient products that drive organizational success."
+    "description1": "Welcome to my personal portfolio. ",
+    "description2": "In this space, you'll discover information about my journey, the technologies I specialize in, and notable projects that have achieved significant success." ,
+    "description3": "Additionally, you can find my contact details and a dedicated form for discussing potential collaborations. I am an interdisciplinary and approachable professional, always open to new opportunities." ,
+    "description4": " Feel free to explore and reach out!"
   },
   "navbar": {
     "home": "Home",
@@ -44,10 +43,11 @@
     "logo": "<VGR>"
   },
   "about": {
-    "title": "About Me",
-    "description": "With a strong foundation in data engineering, data science, AI, and software development, I create technology that empowers organizations and enhances lives. My focus is on delivering scalable, efficient, and inclusive solutions tailored to diverse needs.",
-    "description2": "Currently, I am a software developer specializing in data and AI. I use best practices in Cloud Computing, DevSecOps, Software Architecture, Data Engineering, and Artificial Intelligence to create robust and scalable solutions.",
-    "description3": "I am always seeking new challenges and opportunities to learn and grow, believing that collaboration and knowledge sharing are essential for success.",
+    "title": "About Me 💡",
+    "description": "I have over 8 years of experience working with data technologies, involving projects for government entities, multinational corporations, and various-sized companies and individuals with different complexities.",
+    "description2": "I graduated as an energy engineer from the University of Brasília, where I was part of a multidisciplinary program that allowed me to engage with software disciplines from the start of my studies. My specializations include Software Engineering, Data Science, and Analytics, all attained from the University of São Paulo.",
+    "description3": "I develop specialized data software products using the latest market technologies, ensuring scalability, security, robustness, and quality.",
+    "description4": "My projects follow agile development principles, focusing on personalized, functional solutions that surpass expectations.",
     "expertise": "Areas of Expertise & Technologies",
     "skills": {
       "instructions": "Click to expand/collapse skills",
@@ -191,12 +191,11 @@
     ]
   },
   "contact": {
-    "title": "Let's Work Together",
+    "title": "Let's Work Together 🤝",
     "description": "Ready to start a project? Let me know what you have in mind!",
     "availability": "Available for new projects",
     "responseTime": "Usually responds within 2 business days",
-    "cta": "I want a project!",
-    
+    "cta": "I want a project 🚀!",
     "form": {
       "title": "Project Request Form",
       "name": {
@@ -258,9 +257,7 @@
       "successMessage": "Your project request has been received successfully. I appreciate your interest in working together!",
       "responseTime": "I'll review your request and get back to you within 2 business days."
     },
-    "cta": "I want a project!",
-    "socialTitle": "Or connect with me here:",
-    "timezone": "Current time {{time}}"
-    
+    "cta": "I want a project! 🚀",
+    "socialTitle": "Or connect with me here:"
   }
 }

@@ -48,41 +48,53 @@ const About = () => {
   const { t } = useTranslation();
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
     <motion.section
       id="about"
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
     >
-      {/* Profile Section */}
       <div className="mb-16 max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          variants={itemVariants}
           className="text-4xl font-bold text-[#0A66C2] mb-8 text-center"
         >
           {t('about.title')}
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          variants={itemVariants}
           className="space-y-6 text-gray-700"
         >
           <p className="text-xl leading-relaxed">{t('about.description')}</p>
           <p className="text-xl leading-relaxed">{t('about.description2')}</p>
           <p className="text-xl leading-relaxed">{t('about.description3')}</p>
+          <p className="text-xl leading-relaxed">{t('about.description4')}</p>
         </motion.div>
       </div>
 
-      {/* Skills Section */}
       <div className="mb-8">
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          variants={itemVariants}
           className="text-3xl font-semibold text-[#0A66C2] mb-10 text-center"
         >
           {t('about.expertise')}
@@ -95,9 +107,7 @@ const About = () => {
             return (
               <motion.div
                 key={key}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 + index * 0.1 }}
+                variants={itemVariants}
                 className="bg-white rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 group"
                 whileHover={{ y: -5 }}
               >

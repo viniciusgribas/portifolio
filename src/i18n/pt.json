@@ -1,7 +1,7 @@
 {
     "hero": {
-      "greeting": "Olá! Eu sou o Vinicius!",
-      "intro": "Especialista em",
+      "greeting": "👋 Olá! Eu sou o Vinicius.",
+      "intro": "Especialista em ⚙️",
       "specialties": [
         "Engenharia de Dados",
         "Ciência de Dados",
@@ -28,7 +28,11 @@
           "label": "Anos em Engenharia e Dados"
         }
       },
-      "description": "Como engenheiro de software e dados, dedico-me a criar soluções inovadoras e orientadas por dados que enfrentam desafios complexos em diversos setores. Minha especialidade está em desenvolver produtos escaláveis e eficientes que impulsionam o sucesso organizacional."
+    "description1": "Bem-vindo ao meu portfólio pessoal.",
+    "description2": "Aqui você encontrará informações sobre minha trajetória, as tecnologias que domino e alguns projetos interessantes que resultaram em grandes sucessos.",
+      "description3": "Por fim, estão disponíveis meus contatos e um formulário dedicado para que possamos discutir possíveis colaborações. Sou um profissional interdisciplinar, acessível e sempre aberto a novas oportunidades.",
+      "description4": "Fique à vontade para explorar meu portfólio e entrar em contato comigo!" 
+    
     },
     "navbar": {
       "home": "Início",
@@ -39,13 +43,16 @@
       "logo": "</VGR>"
     },
     "about": {
-      "title": "Sobre Mim",
-      "description": "Com uma base sólida em engenharia de dados, ciência de dados, inteligência artificial e desenvolvimento de software, crio tecnologia que impulsiona organizações e melhora vidas. Meu foco é fornecer soluções escaláveis, eficientes e inclusivas que atendem a diversas necessidades.",
-      "description2": "Atualmente, sou desenvolvedor de software especializado em dados e inteligência artificial. Utilizo as melhores práticas em computação em nuvem, desenvolvimento seguro e operacional, arquitetura de software, engenharia de dados e inteligência artificial para criar soluções robustas e escaláveis.",
-      "description3": "Estou sempre buscando novos desafios e oportunidades para aprender e crescer, acreditando que colaboração e compartilhamento de conhecimento são essenciais para o sucesso.",
+      "description": "Trabalho com tecnologias de dados há mais de 8 anos. Tenho experiência em projetos para o Governo, Multinacionais, Empresas e pessoas de diversos tamanhos e complexidades.",
+      "description2": "Sou graduado engenheiro de energia pela universidade de Brasília, em um campos multidisciplinar que me habilitou contato com disciplinas de software desde o início de minha graduação. ⁠Minhas especializações são em Engenharia de Software , Ciência de Dados e Analytics. Todas pela Universidade de São Paulo.",
+      "description3": "⁠Desenvolvo produtos de software especializados em dados, com as melhores tecnologias do mercado, garantindo escalabilidade, segurança, robustez e qualidade.",
+      "description4": "Meus projetos são orientados pelos princípios da metodologia ágil de desenvolvimento, priorizando soluções personalizadas, funcionais e que superem expectativas.",   
+
+
+      "title": "Sobre Mim 💡",
       "expertise": "Áreas de Especialização & Tecnologias",
       "skills": {
-        "instructions": "Clique para expandir/colapsar habilidades",
+        "instructions": "Clique para expandir/juntar habilidades",
         "expand": "Clique para ver habilidades",
         "collapse": "Clique para esconder habilidades",
         "categories": {
@@ -150,7 +157,7 @@
       ]
     },
     "contact": {
-      "title": "Vamos Trabalhar Juntos",
+      "title": "Vamos Trabalhar Juntos 🤝",
       "description": "Pronto para iniciar um projeto? Me conte sua ideia!",
       "form": {
         "title": "Formulário de Solicitação de Projeto",
@@ -213,8 +220,7 @@
       "successMessage": "Sua solicitação de projeto foi recebida com sucesso. Agradeço seu interesse em trabalharmos juntos!",
       "responseTime": "Analisarei sua solicitação e retornarei em até 2 dias úteis."
       },
-      "cta": "Quero um projeto!",
-      "socialTitle": "Ou conecte-se comigo aqui:",
-      "timezone": "Horário atual {{time}}"
+      "cta": "Quero um projeto! 🚀",
+      "socialTitle": "Ou conecte-se comigo aqui:"
     }
 }
