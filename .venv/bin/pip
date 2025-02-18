@@ -1,4 +1,4 @@
-#!/home/vgr/projects/portfolio/project/portfolio/.venv/bin/python3
+#!/home/vgr/repositorios/portifolio/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

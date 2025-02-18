@@ -455,7 +455,7 @@
   [#box(original-link("mailto:viniciusgribas@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)viniciusgribas\@gmail.com])],
   [#box(original-link("tel:+55-61-98165-7050")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(61\) 98165-7050])],
   [#box(original-link("https://viniciusgribas.netlify.app/")[#fa-icon("link", size: 0.9em) #h(0.05cm)viniciusgribas.netlify.app])],
-  [#box(original-link("https://linkedin.com/in/vinicius-guerra-e-ribas")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)vinicius-guerra-e-ribas])],
+  [#box(original-link("https://linkedin.com/in/viniciusgribas")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)viniciusgribas])],
   [#box(original-link("https://github.com/viniciusgribas")[#fa-icon("github", size: 0.9em) #h(0.05cm)viniciusgribas])],
 )
 #connections(connections-list)

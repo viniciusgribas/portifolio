@@ -4,7 +4,7 @@
 - Email: [viniciusgribas@gmail.com](mailto:viniciusgribas@gmail.com)
 - Location: Rio de Janeiro - RJ, Brazil
 - Website: [viniciusgribas.netlify.app](https://viniciusgribas.netlify.app/)
-- LinkedIn: [vinicius-guerra-e-ribas](https://linkedin.com/in/vinicius-guerra-e-ribas)
+- LinkedIn: [viniciusgribas](https://linkedin.com/in/viniciusgribas)
 - GitHub: [viniciusgribas](https://github.com/viniciusgribas)
 
 
