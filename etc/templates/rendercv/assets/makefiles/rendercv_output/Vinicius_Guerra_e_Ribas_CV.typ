@@ -466,7 +466,19 @@
 
 
 #one-col-entry(
-  content: [Senior Data & Software Engineering professional with 5+ years of experience architecting and implementing scalable data solutions. Proven track record in leading complex projects for government agencies and Fortune 500 companies. Specialized in cloud-native architectures, machine learning operations, and enterprise data platforms.]
+  content: [Senior Data & Software Engineer with #strong[5+ years of experience] leading and delivering scalable cloud-native data solutions for Fortune 500 companies and government agencies. Strong background in AI-driven data pipelines, DevOps automation, and cross-functional collaboration.]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [✔ Architected #strong[50+ ETL pipelines] across 10+ global projects, streamlining cross-departmental data access \(Finance, Logistics, IT\) and optimizing data workflows at scale.]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [✔ Extensive experience in AI-driven data pipelines, including lead classification models, invoice OCR automation, and generative AI assistants using Cloud, OpenAI, and ML models.]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [✔ Recognized with multiple awards, including a Santander Open Academy Scholarship, Raízen Energia S.A. Exceptional Performance Award, and a formal recommendation letter from the Brazilian Government.]
 )
 
 
@@ -478,7 +490,7 @@
   left-column-width: 1cm,
   left-content: [#strong[MBA]],
   middle-content: [
-    #strong[Universidade de São Paulo], Software Engineering
+    #strong[Universidade de São Paulo \(USP\)], Software Engineering
   ],
   right-content: [
     Apr 2024 – Jan 2026
@@ -487,7 +499,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([100\% scholarship for additional specializations at Coursera],[#strong[Coursework:] Full Stack Development, Data and Business, Software Development, Management, and Cloud],)
+    #v(design-highlights-top-margin);#highlights([Full Scholarship for additional specializations at Coursera.],[#strong[Coursework:] Full Stack Development, Software Management, Cloud Computing, Data & Business.],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -501,7 +513,7 @@
   left-column-width: 1cm,
   left-content: [#strong[MBA]],
   middle-content: [
-    #strong[Universidade de São Paulo], Data Science and Analytics
+    #strong[Universidade de São Paulo \(USP\)], Data Science and Analytics
   ],
   right-content: [
     May 2021 – Jan 2023
@@ -510,7 +522,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense],[#strong[Coursework:] Statistics, Supervised and Unsupervised Machine Learning Models, Trends in Data Science and Analytics, Big Data in the Business Environment],)
+    #v(design-highlights-top-margin);#highlights([Graduated with #strong[Highest Distinction], achieving top grades in Research, Final Exams, and Thesis Defense.],[#strong[Coursework:] Statistics, Machine Learning, Big Data, Business Analytics.],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -524,7 +536,7 @@
   left-column-width: 1cm,
   left-content: [#strong[BSc]],
   middle-content: [
-    #strong[Universidade de Brasília], Energy Engineering
+    #strong[Universidade de Brasília \(UnB\)], Energy Engineering
   ],
   right-content: [
     Jan 2014 – May 2021
@@ -533,7 +545,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Final thesis approved with top marks by the University of Brasília, used in voluntary data science work to combat COVID-19 in Brazil.],[#strong[Coursework:] Renewable Energy, Technology, Innovation, Sustainability, and Energy Systems Engineering],)
+    #v(design-highlights-top-margin);#highlights([Final thesis awarded top marks, applied in Brazil's COVID-19 data science efforts.],[#strong[Coursework]: Renewable Energy, Technology, Innovation, Sustainability, and Data Analytics.],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -551,10 +563,10 @@
     #strong[Raizen Energia S.A.], Data Engineer, Analytics Engineering
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Gathered business requirements from various departments \(Power, Finance, Logistics, Software, and IT\) and developed a cloud solution to democratize and enhance data accessibility within the company.],[Developed data quality solutions by monitoring completeness and integrity parameters, implementing sanitation rules, and enriching SSOT databases within a Data Lake House architecture.],[Corrected over 38,000 active customer accounts, enabling the implementation of marketing rules for billing and new sign-ups.],)
+    #v(design-highlights-top-margin);#highlights([Integrated #strong[80\% of business area's data] into a cloud platform, eliminating silos and democratizing access. Optimized data retrieval with queryable views, #strong[reducing data access time by 95\%]],[Optimized PySpark Kubernetes cluster performance, reducing processing time from 20 hours to #strong[30 minutes] and cutting cloud costs by #strong[90\%] with a custom monitoring tool for large-scale datasets.],)
   ],
   right-content: [
-    SP, Brazil \(Remote\)
+    São Paulo, Brazil \(Remote\)
 
 Aug 2023 – present
   ],
@@ -566,10 +578,10 @@ Aug 2023 – present
     #strong[Raizen Energia S.A.], Data Engineer, ETL Pipelines Development
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Collected business requirements from various departments \(Power, Finance, Logistics, Software, and IT\) and developed cloud solutions to democratize and enhance data accessibility within the company.],[Developed a data solution that extracted information from all consumers in Brazil, and enriched the data using a Google API and a Machine Learning algorithm, enabling the identification of high-scoring leads.],[Architected, implemented, orchestrated, and monitored over 20 data pipelines, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.],)
+    #v(design-highlights-top-margin);#highlights([Corrected #strong[40,000+ customer records] from Salesforce & SAP APIs, enabling automated billing & marketing strategies.],[Architected, implemented, orchestrated, and monitored over 50 data solutions, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.],)
   ],
   right-content: [
-    SP, Brazil \(Remote\)
+    São Paulo, Brazil \(Remote\)
 
 June 2022 – Aug 2023
   ],
@@ -581,10 +593,10 @@ June 2022 – Aug 2023
     #strong[Energisa S.A.], Business Intelligence Analyst
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Developed algorithms to iterate with analyses in Excel, enhancing data warehousing and analytics capabilities.],[Employed data visualization tools for strategic market analysis and data-driven decision-making.],[Automated data extraction and transformation processes, reducing manual work by 75\%.],)
+    #v(design-highlights-top-margin);#highlights([Automated data extraction, #strong[reducing manual reporting by 75\%] and optimizing BI reporting pipelines.],[Developed interactive dashboards, providing market insights for executives.],)
   ],
   right-content: [
-    MS, Brazil \(Hybrid\)
+    Mato Grosso do Sul, Brazil \(Hybrid\)
 
 Mar 2021 – June 2022
   ],
@@ -596,10 +608,10 @@ Mar 2021 – June 2022
     #strong[Brazilian Electricity Regulatory Agency \(ANEEL\)], Data Scientist, Intern
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Demonstrated exceptional time management in data projects and ensured data security in compliance with governance standards.],[Played a pivotal role in assisting the Brazilian government in developing a comprehensive database of all energy customers in Brazil.],[Received formal recognition from the Brazilian government for outstanding work in the data science field.],)
+    #v(design-highlights-top-margin);#highlights([Contributed to a nationwide energy customer database, improving regulatory oversight & policymaking.],[Ensured data security compliance, adhering to governance standards],)
   ],
   right-content: [
-    DF, Brazil \(On-site\)
+    Brasília, Brazil \(On-site\)
 
 Jan 2019 – Mar 2021
   ],
@@ -620,7 +632,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Won a full scholarship to a software development school focused on Front-End, Backend, DevOps, Data Engineering, and Data Science.],)
+    #v(design-highlights-top-margin);#highlights([Full Scholarship for advanced software development training \(Full Stack, DevOps, Data Engineering\)],)
   ],
 )
 
@@ -635,7 +647,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Achieved a 100\% job success rate and a 5-star rating on Upwork, with over 100\% project completion.],)
+    #v(design-highlights-top-margin);#highlights([#strong[100\% job success rate], delivering 5-star rated projects with consistent on-time completion.],)
   ],
 )
 
@@ -650,7 +662,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Recognized for exceptional performance in culture, results-oriented work, and teamwork.],)
+    #v(design-highlights-top-margin);#highlights([Recognized for outstanding contributions in data engineering & innovation.],)
   ],
 )
 
@@ -665,7 +677,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Evaluated with the highest grade in the topics: Research Project, Results, Final Exams, and Thesis Defense.],)
+    #v(design-highlights-top-margin);#highlights([Achieved the highest academic distinction in Research & Thesis Defense.],)
   ],
 )
 
@@ -680,7 +692,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Received formal recognition from the Brazilian government for outstanding work in the data science field.],)
+    #v(design-highlights-top-margin);#highlights([Formally recognized for contributions to Brazil's energy sector data initiatives.],)
   ],
 )
 
@@ -695,7 +707,7 @@ Jan 2019 – Mar 2021
     #strong[Certificates]
 
     #v(-design-text-leading)
-    #v(design-highlights-top-margin);#highlights([Prompt Engineering for Developers Certificate - DeepLearning.AI],[Customer-Centric IT Strategy Certificate - University of Virginia],[Microsoft Azure for Data Engineers Certificate - Microsoft],)
+    #v(design-highlights-top-margin);#highlights([#strong[Prompt Engineering for Developers Certificate] - DeepLearning.AI],[Customer-Centric IT Strategy Certificate - University of Virginia],[Microsoft Azure for Data Engineers Certificate - Microsoft],)
   ],
 )
 
@@ -706,7 +718,7 @@ Jan 2019 – Mar 2021
     #strong[Volunteering]
 
     #v(-design-text-leading)
-    #v(design-highlights-top-margin);#highlights([Litter-of-Light \(ONG\) Technology Volunteer for low-income communities in Brazil],[COVID-19 Data Science Volunteer for the Brazilian government],)
+    #v(design-highlights-top-margin);#highlights([Litter-of-Light \(ONG\) – Tech Volunteer supporting low-income communities.],[COVID-19 Data Science Initiative – Contributed to government pandemic response.],)
   ],
 )
 
@@ -716,15 +728,27 @@ Jan 2019 – Mar 2021
 
 
 #one-col-entry(
-  content: [#strong[Data Engineering:] Spark, SQL, Big Data, ETL, API, Python]
+  content: [#strong[Data Engineering:] ETL, Pipelines, Apache Spark, Analytics Engineering, SQL & NoSQL, Data Lakes, Data Governance, Data Quality, Data Integration]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Data Science and Analytics:] Machine Learning, Prompt Engineering, Data Mining, Business Intelligence, Statistics, Data Visualization, R]
+  content: [#strong[Data Science:] Machine Learning, Pandas, Jupyter, Statistical Analysis, Data Visualization, AWS SageMaker, Databricks]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Software Development and IT Operations \(DevOps\):] System Design, CI\/CD, Cloud Computing, Containers, Kubernetes, Monitoring, Data Governance]
+  content: [#strong[DevOps & Cloud:] AWS, Azure, GCP \(Google Cloud Platform\), Kubernetes, CI\/CD, IaC, Docker, Git, Monitoring & Logging]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Software Development:] Python, React + Javascript + Node.js, SQL, CSS + HTML, Backend, Frontend, Full Stack, REST API, Agile, Scrum]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Artificial Intelligence:] Deep Learning, Prompt Engineering, NLP, AI Assistant Development, MLOps]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Business Intelligence & Data Analytics:] Power BI, Tableau, Data Analytics, KPI Monitoring, Dashboard Design, Business Analysis, Data Storytelling]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
