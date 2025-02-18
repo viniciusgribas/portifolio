@@ -1,4 +1,4 @@
-#!/home/vgr/projects/portfolio/project/portfolio/V_LEME_2152025_01/.venv/bin/python3
+#!/home/vgr/projects/portfolio/project/portfolio/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
