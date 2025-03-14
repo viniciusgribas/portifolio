@@ -8,112 +8,105 @@
 - GitHub: [viniciusgribas](https://github.com/viniciusgribas)
 
 
-# Summary
+# Professional Summary
 
-Senior Data & Software Engineer with **5+ years of experience** leading and delivering scalable cloud-native data solutions for Fortune 500 companies and government agencies. Strong background in AI-driven data pipelines, DevOps automation, and cross-functional collaboration.
+Senior **AI & Data Engineer** with **5+ years** of experience delivering scalable, cloud-native **ML and Generative AI solutions** for **Fortune 500 companies and government agencies**. Expert in Python, cloud platforms (**AWS, Azure, GCP**), containerization (**Docker/Kubernetes**), and NLP-driven solutions (**LLMs, Prompt Engineering**).
 
-✔ Architected **50+ ETL pipelines** across 10+ global projects, streamlining cross-departmental data access (Finance, Logistics, IT) and optimizing data workflows at scale.
+✓ Built and deployed **AI-driven products** leveraging **Large Language Models (GPT-based)** for automated lead classification, invoice OCR, and business intelligence virtual assistants.
 
-✔ Extensive experience in AI-driven data pipelines, including lead classification models, invoice OCR automation, and generative AI assistants using Cloud, OpenAI, and ML models.
+✓ Enhanced cloud-native big data processing, reducing PySpark Kubernetes pipeline runtime from **20 hours to 30 minutes**, cutting cloud costs by **90%** through advanced monitoring solutions.
 
-✔ Recognized with multiple awards, including a Santander Open Academy Scholarship, Raízen Energia S.A. Exceptional Performance Award, and a formal recommendation letter from the Brazilian Government.
+✓ **Developed 50+ ETL pipelines** across **10+ global projects**, optimizing **data workflows** and **streamlining access** across Finance, Logistics, and IT teams.
+
+✓ **Recognized with multiple awards**, including a **Santander Open Academy Scholarship**, **Raízen Energia S.A. Exceptional Performance Award**, and a **formal recommendation letter from the Brazilian Government**.
 
 # Education
 
 ## Universidade de São Paulo (USP), MBA in Software Engineering
 
 - Apr 2024 – Jan 2026
-- Full Scholarship for additional specializations at Coursera.
+- **Full Scholarship** for specializations at Coursera.
 - **Coursework:** Full Stack Development, Software Management, Cloud Computing, Data & Business.
 
 ## Universidade de São Paulo (USP), MBA in Data Science and Analytics
 
 - May 2021 – Jan 2023
-- Graduated with **Highest Distinction**, achieving top grades in Research, Final Exams, and Thesis Defense.
-- **Coursework:** Statistics, Machine Learning, Big Data, Business Analytics.
+- **Graduated with Highest Distinction**, excelling in ML, Statistics, and Big Data courses.
+- Deep dive into Python traditional data science libraries (**TensorFlow, PyTorch, Keras, scikit-learn**) and NLP-focused tools (**LLMs, GenAI, NLP, Prompt Engineering**) to become a versatile data scientist.
+- **Coursework:** Machine Learning, NLP, Big Data Analytics, Statistical Analysis.
 
 ## Universidade de Brasília (UnB), BSc in Energy Engineering
 
 - Jan 2014 – May 2021
-- Final thesis awarded top marks, applied in Brazil's COVID-19 data science efforts.
-- **Coursework**: Renewable Energy, Technology, Innovation, Sustainability, and Data Analytics.
+- Thesis applied in national **Goverment Data Science** initiatives.
+- Data science researcher in the fight against **COVID 19**
 
 # Work Experience
 
-## Raizen Energia S.A., Data Engineer, Analytics Engineering
+## Raizen Energia S.A., AI & Data Engineer, Analytics Engineering
 
 - Aug 2023 – present
 - São Paulo, Brazil (Remote)
-- Integrated **80% of business area's data** into a cloud platform, eliminating silos and democratizing access. Optimized data retrieval with queryable views, **reducing data access time by 95%**
-- Optimized PySpark Kubernetes cluster performance, reducing processing time from 20 hours to **30 minutes** and cutting cloud costs by **90%** with a custom monitoring tool for large-scale datasets.
+- Built scalable **AI-focused analytics pipelines** using **GPT-based LLMs**, significantly enhancing real-time insights and predictive analytics for internal and external client solutions.
+- Deployed and managed cloud-native ML/Business pipelines using **Docker, Kubernetes, and AWS/Azure**, making 100% of business data available in the cloud
+- Improved data integrity by correcting **40,000+ customer records**, automating billing and marketing processes.
 
-## Raizen Energia S.A., Data Engineer, ETL Pipelines Development
+## Raizen Energia S.A., Data Engineer, ETL & ML Pipelines
 
 - June 2022 – Aug 2023
 - São Paulo, Brazil (Remote)
-- Corrected **40,000+ customer records** from Salesforce & SAP APIs, enabling automated billing & marketing strategies.
-- Architected, implemented, orchestrated, and monitored over 50 data solutions, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.
+- Architected and optimized **50+ ETL & ML solutions**, integrating APIs, SQL/NoSQL databases, and Data Lakes.
+- Automated ETL pipelines, reducing manual workload by **80%**, and designed ML-based data enrichment solutions.
 
-## Energisa S.A., Business Intelligence Analyst
+## Energisa S.A., Business Intelligence & Data Analyst
 
 - Mar 2021 – June 2022
 - Mato Grosso do Sul, Brazil (Hybrid)
-- Automated data extraction, **reducing manual reporting by 75%** and optimizing BI reporting pipelines.
-- Developed interactive dashboards, providing market insights for executives.
+- Automated data extraction processes, cutting manual reporting by **75%**.
+- Built interactive dashboards, enabling **real-time analytics**.
 
 ## Brazilian Electricity Regulatory Agency (ANEEL), Data Scientist, Intern
 
 - Jan 2019 – Mar 2021
 - Brasília, Brazil (On-site)
-- Contributed to a nationwide energy customer database, improving regulatory oversight & policymaking.
-- Ensured data security compliance, adhering to governance standards
+- Built a **nationwide energy customer database** enhancing regulatory oversight and decision-making.
+- Ensured compliance with data governance and security protocols.
 
 # Awards
 
 ## Santander Open Academy Scholarship
 
 - 2024
-- Full Scholarship for advanced software development training (Full Stack, DevOps, Data Engineering)
+- Advanced training in **Data Engineering, ML, and DevOps**.
 
-## Upwork Top Rated Freelancer with 100% Job Success and 5-Star Rating
+## Upwork Top Rated Freelancer with 100% Job Success
 
 - 2022 – present
-- **100% job success rate**, delivering 5-star rated projects with consistent on-time completion.
+- Delivered numerous **client-facing ML/AI projects** with **5-star ratings**.
 
 ## Raizen Energia S.A. Exceptional Performance Recognition
 
 - 2023
-- Recognized for outstanding contributions in data engineering & innovation.
-
-## Universidade de São Paulo Top Grade Recognition
-
-- 2023
-- Achieved the highest academic distinction in Research & Thesis Defense.
-
-## Brazilian Electricity Regulatory Agency (ANEEL) Recommendation Letter
-
-- 2021
-- Formally recognized for contributions to Brazil's energy sector data initiatives.
+- Recognized for **outstanding contributions** in AI & data innovation.
 
 # Certificates and Volunteering
 
 ## Certificates
 
-- **Prompt Engineering for Developers Certificate** - DeepLearning.AI
-- Customer-Centric IT Strategy Certificate - University of Virginia
-- Microsoft Azure for Data Engineers Certificate - Microsoft
+- **AI Agents Specialization** - HuggingFace ( In Progress )
+- **Microsoft Azure for Data Engineers** – Microsoft
+- **Prompt Engineering for Developers** – DeepLearning.AI
+- **Customer-Centric IT Strategy** – University of Virginia
 
 ## Volunteering
 
-- Litter-of-Light (ONG) – Tech Volunteer supporting low-income communities.
-- COVID-19 Data Science Initiative – Contributed to government pandemic response.
+- **Litter-of-Light** – Tech Volunteer for low-income communities.
+- **COVID-19 Data Science Initiative** – Data analytics contribution to pandemic response.
 
 # Skills
 
-- Data Engineering: ETL, Pipelines, Apache Spark, Analytics Engineering, SQL & NoSQL, Data Lakes, Data Governance, Data Quality, Data Integration
-- Data Science: Machine Learning, Pandas, Jupyter, Statistical Analysis, Data Visualization, AWS SageMaker, Databricks
-- DevOps & Cloud: AWS, Azure, GCP (Google Cloud Platform), Kubernetes, CI/CD, IaC, Docker, Git, Monitoring & Logging
-- Software Development: Python, React + Javascript + Node.js, SQL, CSS + HTML, Backend, Frontend, Full Stack, REST API, Agile, Scrum.
-- Artificial Intelligence: Deep Learning, Prompt Engineering, NLP, AI Assistant Development, MLOps.
-- Business Intelligence & Data Analytics: Power BI, Tableau, Data Analytics, KPI Monitoring, Dashboard Design, Business Analysis, Data Storytelling.
-- Soft Skills: Leadership, Communication, Problem-Solving, Teamwork, Customer Focus, Adaptability, Decision-Making, Time Management, Strategic Thinking
+- AI & ML: LLMs (GPT), GenAI, NLP, TensorFlow, PyTorch, Keras, scikit-learn, Prompt Engineering, Model Deployment, MLOps
+- Data Engineering: ETL, Spark, SQL/NoSQL, Data Lakes, Data Quality & Governance
+- DevOps & Cloud: AWS, Azure, GCP, Kubernetes, Docker, CI/CD, Terraform, Monitoring
+- Software Development: Python, OOP, TDD, REST APIs, Agile
+- Soft Skills: Communication, Teamwork, Problem-Solving, Client Delivery, Strategic Thinking

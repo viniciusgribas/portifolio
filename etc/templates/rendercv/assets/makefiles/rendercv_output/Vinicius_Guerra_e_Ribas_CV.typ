@@ -3,7 +3,7 @@
 
 #let name = "Vinicius Guerra e Ribas"
 #let locale-catalog-page-numbering-style = context { "Vinicius Guerra e Ribas - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Feb 2025"
+#let locale-catalog-last-updated-date-style = "Last updated in Mar 2025"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
@@ -462,23 +462,27 @@
 
 
 
-== Summary
+== Professional Summary
 
 
 #one-col-entry(
-  content: [Senior Data & Software Engineer with #strong[5+ years of experience] leading and delivering scalable cloud-native data solutions for Fortune 500 companies and government agencies. Strong background in AI-driven data pipelines, DevOps automation, and cross-functional collaboration.]
+  content: [Senior #strong[AI & Data Engineer] with #strong[5+ years] of experience delivering scalable, cloud-native #strong[ML and Generative AI solutions] for #strong[Fortune 500 companies and government agencies]. Expert in Python, cloud platforms \(#strong[AWS, Azure, GCP]\), containerization \(#strong[Docker\/Kubernetes]\), and NLP-driven solutions \(#strong[LLMs, Prompt Engineering]\).]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [✔ Architected #strong[50+ ETL pipelines] across 10+ global projects, streamlining cross-departmental data access \(Finance, Logistics, IT\) and optimizing data workflows at scale.]
+  content: [✓ Built and deployed #strong[AI-driven products] leveraging #strong[Large Language Models \(GPT-based\)] for automated lead classification, invoice OCR, and business intelligence virtual assistants.]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [✔ Extensive experience in AI-driven data pipelines, including lead classification models, invoice OCR automation, and generative AI assistants using Cloud, OpenAI, and ML models.]
+  content: [✓ Enhanced cloud-native big data processing, reducing PySpark Kubernetes pipeline runtime from #strong[20 hours to 30 minutes], cutting cloud costs by #strong[90\%] through advanced monitoring solutions.]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [✔ Recognized with multiple awards, including a Santander Open Academy Scholarship, Raízen Energia S.A. Exceptional Performance Award, and a formal recommendation letter from the Brazilian Government.]
+  content: [✓ #strong[Developed 50+ ETL pipelines] across #strong[10+ global projects], optimizing #strong[data workflows] and #strong[streamlining access] across Finance, Logistics, and IT teams.]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [✓ #strong[Recognized with multiple awards], including a #strong[Santander Open Academy Scholarship], #strong[Raízen Energia S.A. Exceptional Performance Award], and a #strong[formal recommendation letter from the Brazilian Government].]
 )
 
 
@@ -499,7 +503,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Full Scholarship for additional specializations at Coursera.],[#strong[Coursework:] Full Stack Development, Software Management, Cloud Computing, Data & Business.],)
+    #v(design-highlights-top-margin);#highlights([#strong[Full Scholarship] for specializations at Coursera.],[#strong[Coursework:] Full Stack Development, Software Management, Cloud Computing, Data & Business.],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -522,7 +526,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Graduated with #strong[Highest Distinction], achieving top grades in Research, Final Exams, and Thesis Defense.],[#strong[Coursework:] Statistics, Machine Learning, Big Data, Business Analytics.],)
+    #v(design-highlights-top-margin);#highlights([#strong[Graduated with Highest Distinction], excelling in ML, Statistics, and Big Data courses.],[Deep dive into Python traditional data science libraries \(#strong[TensorFlow, PyTorch, Keras, scikit-learn]\) and NLP-focused tools \(#strong[LLMs, GenAI, NLP, Prompt Engineering]\) to become a versatile data scientist.],[#strong[Coursework:] Machine Learning, NLP, Big Data Analytics, Statistical Analysis.],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -545,7 +549,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Final thesis awarded top marks, applied in Brazil's COVID-19 data science efforts.],[#strong[Coursework]: Renewable Energy, Technology, Innovation, Sustainability, and Data Analytics.],)
+    #v(design-highlights-top-margin);#highlights([Thesis applied in national #strong[Goverment Data Science] initiatives.],[Data science researcher in the fight against #strong[COVID 19]],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -560,10 +564,10 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Raizen Energia S.A.], Data Engineer, Analytics Engineering
+    #strong[Raizen Energia S.A.], AI & Data Engineer, Analytics Engineering
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Integrated #strong[80\% of business area's data] into a cloud platform, eliminating silos and democratizing access. Optimized data retrieval with queryable views, #strong[reducing data access time by 95\%]],[Optimized PySpark Kubernetes cluster performance, reducing processing time from 20 hours to #strong[30 minutes] and cutting cloud costs by #strong[90\%] with a custom monitoring tool for large-scale datasets.],)
+    #v(design-highlights-top-margin);#highlights([Built scalable #strong[AI-focused analytics pipelines] using #strong[GPT-based LLMs], significantly enhancing real-time insights and predictive analytics for internal and external client solutions.],[Deployed and managed cloud-native ML\/Business pipelines using #strong[Docker, Kubernetes, and AWS\/Azure], making 100\% of business data available in the cloud],[Improved data integrity by correcting #strong[40,000+ customer records], automating billing and marketing processes.],)
   ],
   right-content: [
     São Paulo, Brazil \(Remote\)
@@ -575,10 +579,10 @@ Aug 2023 – present
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Raizen Energia S.A.], Data Engineer, ETL Pipelines Development
+    #strong[Raizen Energia S.A.], Data Engineer, ETL & ML Pipelines
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Corrected #strong[40,000+ customer records] from Salesforce & SAP APIs, enabling automated billing & marketing strategies.],[Architected, implemented, orchestrated, and monitored over 50 data solutions, integrating sources such as business SharePoint, external APIs, dashboards, SQL databases, NoSQL databases, and data lakes.],)
+    #v(design-highlights-top-margin);#highlights([Architected and optimized #strong[50+ ETL & ML solutions], integrating APIs, SQL\/NoSQL databases, and Data Lakes.],[Automated ETL pipelines, reducing manual workload by #strong[80\%], and designed ML-based data enrichment solutions.],)
   ],
   right-content: [
     São Paulo, Brazil \(Remote\)
@@ -590,10 +594,10 @@ June 2022 – Aug 2023
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Energisa S.A.], Business Intelligence Analyst
+    #strong[Energisa S.A.], Business Intelligence & Data Analyst
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Automated data extraction, #strong[reducing manual reporting by 75\%] and optimizing BI reporting pipelines.],[Developed interactive dashboards, providing market insights for executives.],)
+    #v(design-highlights-top-margin);#highlights([Automated data extraction processes, cutting manual reporting by #strong[75\%].],[Built interactive dashboards, enabling #strong[real-time analytics].],)
   ],
   right-content: [
     Mato Grosso do Sul, Brazil \(Hybrid\)
@@ -608,7 +612,7 @@ Mar 2021 – June 2022
     #strong[Brazilian Electricity Regulatory Agency \(ANEEL\)], Data Scientist, Intern
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Contributed to a nationwide energy customer database, improving regulatory oversight & policymaking.],[Ensured data security compliance, adhering to governance standards],)
+    #v(design-highlights-top-margin);#highlights([Built a #strong[nationwide energy customer database] enhancing regulatory oversight and decision-making.],[Ensured compliance with data governance and security protocols.],)
   ],
   right-content: [
     Brasília, Brazil \(On-site\)
@@ -632,14 +636,14 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Full Scholarship for advanced software development training \(Full Stack, DevOps, Data Engineering\)],)
+    #v(design-highlights-top-margin);#highlights([Advanced training in #strong[Data Engineering, ML, and DevOps].],)
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Upwork Top Rated Freelancer with 100\% Job Success and 5-Star Rating]
+    #strong[Upwork Top Rated Freelancer with 100\% Job Success]
   ],
   right-content: [
     2022 – present
@@ -647,7 +651,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([#strong[100\% job success rate], delivering 5-star rated projects with consistent on-time completion.],)
+    #v(design-highlights-top-margin);#highlights([Delivered numerous #strong[client-facing ML\/AI projects] with #strong[5-star ratings].],)
   ],
 )
 
@@ -662,37 +666,7 @@ Jan 2019 – Mar 2021
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Recognized for outstanding contributions in data engineering & innovation.],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Universidade de São Paulo Top Grade Recognition]
-  ],
-  right-content: [
-    2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Achieved the highest academic distinction in Research & Thesis Defense.],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Brazilian Electricity Regulatory Agency \(ANEEL\) Recommendation Letter]
-  ],
-  right-content: [
-    2021
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Formally recognized for contributions to Brazil's energy sector data initiatives.],)
+    #v(design-highlights-top-margin);#highlights([Recognized for #strong[outstanding contributions] in AI & data innovation.],)
   ],
 )
 
@@ -707,7 +681,7 @@ Jan 2019 – Mar 2021
     #strong[Certificates]
 
     #v(-design-text-leading)
-    #v(design-highlights-top-margin);#highlights([#strong[Prompt Engineering for Developers Certificate] - DeepLearning.AI],[Customer-Centric IT Strategy Certificate - University of Virginia],[Microsoft Azure for Data Engineers Certificate - Microsoft],)
+    #v(design-highlights-top-margin);#highlights([#strong[AI Agents Specialization] - HuggingFace \( In Progress \)],[#strong[Microsoft Azure for Data Engineers] – Microsoft],[#strong[Prompt Engineering for Developers] – DeepLearning.AI],[#strong[Customer-Centric IT Strategy] – University of Virginia],)
   ],
 )
 
@@ -718,7 +692,7 @@ Jan 2019 – Mar 2021
     #strong[Volunteering]
 
     #v(-design-text-leading)
-    #v(design-highlights-top-margin);#highlights([Litter-of-Light \(ONG\) – Tech Volunteer supporting low-income communities.],[COVID-19 Data Science Initiative – Contributed to government pandemic response.],)
+    #v(design-highlights-top-margin);#highlights([#strong[Litter-of-Light] – Tech Volunteer for low-income communities.],[#strong[COVID-19 Data Science Initiative] – Data analytics contribution to pandemic response.],)
   ],
 )
 
@@ -728,31 +702,23 @@ Jan 2019 – Mar 2021
 
 
 #one-col-entry(
-  content: [#strong[Data Engineering:] ETL, Pipelines, Apache Spark, Analytics Engineering, SQL & NoSQL, Data Lakes, Data Governance, Data Quality, Data Integration]
+  content: [#strong[AI & ML:] LLMs \(GPT\), GenAI, NLP, TensorFlow, PyTorch, Keras, scikit-learn, Prompt Engineering, Model Deployment, MLOps]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Data Science:] Machine Learning, Pandas, Jupyter, Statistical Analysis, Data Visualization, AWS SageMaker, Databricks]
+  content: [#strong[Data Engineering:] ETL, Spark, SQL\/NoSQL, Data Lakes, Data Quality & Governance]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[DevOps & Cloud:] AWS, Azure, GCP \(Google Cloud Platform\), Kubernetes, CI\/CD, IaC, Docker, Git, Monitoring & Logging]
+  content: [#strong[DevOps & Cloud:] AWS, Azure, GCP, Kubernetes, Docker, CI\/CD, Terraform, Monitoring]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Software Development:] Python, React + Javascript + Node.js, SQL, CSS + HTML, Backend, Frontend, Full Stack, REST API, Agile, Scrum]
+  content: [#strong[Software Development:] Python, OOP, TDD, REST APIs, Agile]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Artificial Intelligence:] Deep Learning, Prompt Engineering, NLP, AI Assistant Development, MLOps]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Business Intelligence & Data Analytics:] Power BI, Tableau, Data Analytics, KPI Monitoring, Dashboard Design, Business Analysis, Data Storytelling]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Soft Skills:] Leadership, Communication, Problem-Solving, Teamwork, Customer Focus, Adaptability, Decision-Making, Time Management, Strategic Thinking]
+  content: [#strong[Soft Skills:] Communication, Teamwork, Problem-Solving, Client Delivery, Strategic Thinking]
 )
 
 
