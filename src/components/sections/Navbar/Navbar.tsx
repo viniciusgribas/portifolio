@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Home, User, FolderGit2, Mail } from 'lucide-react';
+import { Menu, X, Home, User, FolderGit2, Mail, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LanguageChanger from '../LanguageChanger/LanguageChanger';
 
@@ -23,6 +23,7 @@ const Navbar = () => {
     { name: t('navbar.home'), to: 'home', icon: Home },
     { name: t('navbar.about'), to: 'about', icon: User },
     { name: t('navbar.projects'), to: 'projects', icon: FolderGit2 },
+    { name: t('navbar.sandbox'), to: 'sandbox', icon: Play },
     { name: t('navbar.contact'), to: 'contact', icon: Mail },
   ];
 

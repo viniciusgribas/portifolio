@@ -38,6 +38,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "sandbox" :"AI Playground",
     "contact": "Contact",
     "openMenu": "Open menu",
     "logo": "<VGR>"
@@ -70,6 +71,8 @@
     "privateProject": "(Private project - Source code and details protected by NDA)",
     "autoScroll": "Auto-scrolling • Hover to pause",
     "hoverPause": "Paused • Move mouse away to continue",
+    "readMore": "Read more",
+    "showLess": "Show less",
     "items": [
       {
         "id": "nlpProject",
@@ -190,6 +193,84 @@
       }
     ]
   },
+  "sandbox": {
+    "title": "AI Playground 🧠",
+    "description": "Experience my machine learning models and data applications in action. These interactive demos showcase practical applications of AI and data engineering techniques. Feel free to experiment with them!",
+    "tryItNow": "Try it now",
+    "learnMore": "Learn more",
+    "viewCode": "View code",
+    "privateLabel": "Private",
+    "publicLabel": "Public",
+    "noResults": "No demos match your current filter selection.",
+    "modal": {
+      "restrictedTitle": "Private Model Access",
+      "restrictedMessage": "This model is currently restricted due to specialized use cases or additional setup requirements. Please contact me for access or a personalized demo.",
+      "contactTitle": "Interested in a personalized demo?",
+      "contactButton": "Contact for Access"
+    },
+    "categories": {
+      "all": "All Categories",
+      "nlp": "Natural Language Processing",
+      "cv": "Computer Vision",
+      "data": "Data Analysis",
+      "other": "Other Applications"
+    },
+    "demos": [
+      {
+        "id": "text-sentiment",
+        "title": "Text Sentiment Analyzer",
+        "description": "Analyze the sentiment of any text input to determine if it's positive, negative, or neutral. Great for customer feedback analysis.",
+        "image": "/assets/sentiment-analyzer.jpg",
+        "modelUrl": "https://huggingface.co/spaces/viniciusgribas/sentiment-analyzer",
+        "repoUrl": "https://github.com/viniciusgribas/sentiment-analyzer",
+        "tech": ["Python", "Transformers", "Gradio", "Hugging Face"],
+        "category": "nlp",
+        "isPublic": true
+      },
+      {
+        "id": "image-classifier",
+        "title": "Image Classification App",
+        "description": "Upload any image and get instant classification using a fine-tuned vision model that can recognize hundreds of everyday objects.",
+        "image": "/assets/image-classifier.jpg",
+        "modelUrl": "https://huggingface.co/spaces/viniciusgribas/image-classifier",
+        "repoUrl": "https://github.com/viniciusgribas/image-classifier",
+        "tech": ["Python", "PyTorch", "Gradio", "Computer Vision"],
+        "category": "cv",
+        "isPublic": true
+      },
+      {
+        "id": "data-visualization",
+        "title": "Interactive Energy Data Explorer",
+        "description": "Explore Brazilian energy sector data through interactive visualizations. Filter by region, time period, and energy source.",
+        "image": "/assets/data-explorer.jpg",
+        "modelUrl": "https://brazenergy.streamlit.app/",
+        "tech": ["Python", "Streamlit", "Plotly", "Pandas"],
+        "category": "data",
+        "isPublic": true
+      },
+      {
+        "id": "recommendation-engine",
+        "title": "Personalized Recommendation Engine",
+        "description": "Enterprise-grade recommendation system that delivers personalized content suggestions based on user behavior patterns.",
+        "image": "/assets/recommendation-engine.jpg",
+        "modelUrl": "https://private-demo.example.com",
+        "tech": ["Python", "TensorFlow", "Collaborative Filtering", "FastAPI"],
+        "category": "other",
+        "isPublic": false
+      },
+      {
+        "id": "ai-energy-agent",
+        "title": "AI Agent with OCR Tools for Energy Lead Analysis",
+        "description": "The AI agent integrates with an OCR tool to detect electricity bills and incorporates them into data pipelines for real-time lead analysis.",
+        "image": "/assets/ai-energy-agent.jpg",
+        "modelUrl": "",
+        "tech": ["Python", "GPT4", "Azure AI Vision", "Optical character recognition (OCR)", "ETL pipelines"],
+        "category": "nlp",
+        "isPublic": false
+      }
+    ]
+  },
+
   "contact": {
     "title": "Let's Work Together 🤝",
     "description": "Ready to start a project? Let me know what you have in mind!",
