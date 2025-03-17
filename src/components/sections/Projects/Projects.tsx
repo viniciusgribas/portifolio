@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
@@ -9,7 +9,9 @@ const Projects = () => {
   const { t } = useTranslation()
   const [isHovered, setIsHovered] = useState(false)
   const carouselRef = useRef<HTMLDivElement>(null)
-  
+  const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [viewMode, setViewMode] = useState<'summary' | 'detailed'>('summary')
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -24,6 +26,14 @@ const Projects = () => {
         className={`inline ${index < rating ? 'text-[#F1C40F]' : 'text-gray-300'}`}
       />
     ))
+  }
+
+  const toggleDescription = (id: string) => {
+    setExpandedId(expandedId === id ? null : id)
+  }
+
+  const toggleViewMode = () => {
+    setViewMode(prev => prev === 'summary' ? 'detailed' : 'summary')
   }
 
   useEffect(() => {
@@ -84,35 +94,63 @@ const Projects = () => {
                 }}
               >
                 <div>
-                  {/* Title and Links */}
+                  {/* Title and View Toggle */}
                   <div className="flex justify-between items-start mb-4">
                     <motion.h3 
                       className="text-2xl font-bold text-[#0A66C2]"
                       whileHover={{ x: 3 }}
-                      transition={{ duration: 0.2 }}
                     >
                       {project.title}
                     </motion.h3>
-                    {project.url && (
-                      <motion.a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-base text-[#0A66C2] hover:underline flex items-center gap-2 font-medium"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.2 }}
+                    <div className="flex gap-3">
+                      {project.url && (
+                        <motion.a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#0A66C2] hover:text-[#084a8d]"
+                          whileHover={{ scale: 1.1 }}
+                        >
+                          <FiExternalLink className="w-5 h-5" />
+                        </motion.a>
+                      )}
+                      <button
+                        onClick={() => toggleDescription(project.id)}
+                        className="text-[#0A66C2] hover:text-[#084a8d] text-sm font-medium"
                       >
-                        <span>{t('projects.viewProject')}</span>
-                        <FiExternalLink className="w-5 h-5" />
-                      </motion.a>
-                    )}
+                        {expandedId === project.id ? t('projects.showLess') : t('projects.readMore')}
+                      </button>
+                    </div>
                   </div>
 
-                  {/* Description */}
-                  <p className="text-gray-700 mb-4 text-base leading-relaxed">
-                    {project.description}
-                  </p>
-                  
+                  {/* Description with AnimatePresence */}
+                  <AnimatePresence mode="wait">
+                    {expandedId === project.id ? (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <p className="text-gray-700 text-base leading-relaxed mb-4">
+                          {project.description}
+                        </p>
+                        <p className="text-gray-600 italic text-base mb-4">
+                          "{project.review}"
+                        </p>
+                      </motion.div>
+                    ) : (
+                      <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="text-gray-700 mb-4 text-base leading-relaxed line-clamp-2"
+                      >
+                        {project.description}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+
                   {/* Tech Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.map((tech: string) => (
@@ -127,53 +165,42 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {/* Rating and Review */}
-                  <div className="mb-4">
-                    <motion.div 
-                      className="flex items-center gap-2 mb-2"
-                      initial={{ opacity: 0.8 }}
-                      whileHover={{ opacity: 1 }}
-                    >
-                      {renderStars(project.rating)}
-                      <span className="text-gray-500 text-base">({project.rating.toFixed(1)})</span>
-                    </motion.div>
-                    <p className="italic text-base text-gray-600 leading-relaxed">
-                      "{project.review}"
-                    </p>
-                    <div className="text-sm text-gray-500 mt-2 font-medium">
-                      <span className="font-bold">{project.source}</span> • {project.date}
-                    </div>
-                  </div>
+                  {/* Rating Section */}
+                  <motion.div 
+                    className="flex items-center gap-2 mb-4"
+                    initial={{ opacity: 0.8 }}
+                    whileHover={{ opacity: 1 }}
+                  >
+                    {renderStars(project.rating)}
+                    <span className="text-gray-500 text-sm">({project.rating.toFixed(1)})</span>
+                  </motion.div>
 
-                  {/* Footer Links */}
-                  <div className="flex items-center justify-between mt-6">
+                  {/* Project Image */}
+                  {project.image && (
+                    <motion.div
+                      className="relative group mt-4 h-48 overflow-hidden rounded-xl border border-gray-200"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                      />
+                      {project.url && (
+                        <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                          <FiExternalLink className="text-white opacity-0 group-hover:opacity-100 w-8 h-8" />
+                        </div>
+                      )}
+                    </motion.div>
+                  )}
+
+                  {/* Footer */}
+                  <div className="flex items-center justify-between mt-4 text-sm text-gray-500">
+                    <span>{project.date}</span>
                     {project.private && (
-                      <div className="text-sm text-gray-500 italic">
-                        {t('projects.privateProject')}
-                      </div>
+                      <span className="italic">{t('projects.privateProject')}</span>
                     )}
                   </div>
-
-                  {/* Image */}
-                  {project.image && (
-                    <motion.a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                      whileHover={{ scale: 1.03 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="relative group mt-6 h-48 overflow-hidden rounded-xl border border-gray-200">
-                        <div className="absolute inset-0 bg-[#0077B5]/20 transition-opacity duration-300 group-hover:opacity-0" />
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-                        />
-                      </div>
-                    </motion.a>
-                  )}
                 </div>
               </motion.div>
             ))}
@@ -195,4 +222,3 @@ const Projects = () => {
 }
 
 export default Projects
-        

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import { FiExternalLink, FiCode, FiInfo } from 'react-icons/fi';
 import { Braces, Brain, Gauge, Lock } from 'lucide-react';
+import { Tooltip } from 'react-tooltip';
 
 interface DemoCard {
   id: string;
@@ -163,7 +164,20 @@ const InteractiveSandbox: React.FC = () => {
               
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#0A66C2] mb-2">{demo.title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">{demo.description}</p>
+                <p 
+                  className="text-gray-600 mb-4 line-clamp-2"
+                  data-tooltip-id={`tooltip-${demo.id}`}
+                  data-tooltip-content={demo.description}
+                >
+                  {demo.description}
+                </p>
+                
+                <Tooltip
+                  id={`tooltip-${demo.id}`}
+                  place="bottom"
+                  className="max-w-sm bg-white text-gray-800 p-4 rounded-xl shadow-lg border border-gray-200"
+                  style={{ zIndex: 1000 }}
+                />
                 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-6">

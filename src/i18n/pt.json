@@ -73,6 +73,8 @@
       "privateProject": "(Projeto privado - Código fonte e detalhes protegidos por NDA)",
       "autoScroll": "Rolagem automática • Passe o mouse para pausar",
       "hoverPause": "Pausado • Retire o mouse para continuar",
+      "readMore": "Ler mais",
+      "showLess": "Mostrar menos",
       "items": [
         {
           "id": "nlpProject",
@@ -213,16 +215,6 @@
           "isPublic": true
         },
         {
-          "id": "text-summarizer",
-          "title": "Resumidor de Documentos",
-          "description": "Gere automaticamente resumos concisos de documentos longos, artigos ou papers de pesquisa usando técnicas avançadas de PLN.",
-          "image": "/assets/text-summarizer.jpg",
-          "modelUrl": "https://huggingface.co/spaces/viniciusgribas/text-summarizer",
-          "tech": ["Python", "Transformers", "BERT", "Hugging Face"],
-          "category": "nlp",
-          "isPublic": true
-        },
-        {
           "id": "recommendation-engine",
           "title": "Motor de Recomendação Personalizada",
           "description": "Sistema de recomendação de nível empresarial que entrega sugestões de conteúdo personalizadas com base em padrões de comportamento do usuário.",
@@ -233,13 +225,13 @@
           "isPublic": false
         },
         {
-          "id": "anomaly-detection",
-          "title": "Detecção de Anomalias em Séries Temporais",
-          "description": "Sistema de monitoramento industrial que detecta anomalias em dados de séries temporais, essencial para manutenção preditiva e controle de qualidade.",
-          "image": "/assets/anomaly-detection.jpg",
-          "modelUrl": "https://private-demo.example.com",
-          "tech": ["Python", "Prophet", "LSTM", "Isolation Forest"],
-          "category": "data",
+          "id": "ai-energy-agent",
+          "title": "Agente de IA com Ferramentas OCR para Análise de Leads de Energia",
+          "description": "O agente de IA integra-se com uma ferramenta OCR para detectar contas de energia e incorporá-las em pipelines de dados para análise de leads em tempo real.",
+          "image": "/assets/ai-energy-agent.jpg",
+          "modelUrl": "",
+          "tech": ["Python", "GPT4", "Azure AI Vision", "Reconhecimento Óptico de Caracteres (OCR)", "Pipelines ETL"],
+          "category": "nlp",
           "isPublic": false
         }
       ]
@@ -310,6 +302,9 @@
       "responseTime": "Analisarei sua solicitação e retornarei em até 2 dias úteis."
       },
       "cta": "Quero um projeto! 🚀",
-      "socialTitle": "Ou conecte-se comigo aqui:"
+      "socialTitle": "Ou conecte-se comigo aqui:",
+      "availability": "Disponível para novos projetos",
+      "responseTime": "Geralmente responde em até 2 dias úteis",
+      "cta": "Quero um projeto 🚀!"
     }
 }

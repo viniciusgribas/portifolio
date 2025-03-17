@@ -71,6 +71,8 @@
     "privateProject": "(Private project - Source code and details protected by NDA)",
     "autoScroll": "Auto-scrolling • Hover to pause",
     "hoverPause": "Paused • Move mouse away to continue",
+    "readMore": "Read more",
+    "showLess": "Show less",
     "items": [
       {
         "id": "nlpProject",
@@ -241,19 +243,9 @@
         "title": "Interactive Energy Data Explorer",
         "description": "Explore Brazilian energy sector data through interactive visualizations. Filter by region, time period, and energy source.",
         "image": "/assets/data-explorer.jpg",
-        "modelUrl": "https://huggingface.co/spaces/viniciusgribas/energy-data-explorer",
+        "modelUrl": "https://brazenergy.streamlit.app/",
         "tech": ["Python", "Streamlit", "Plotly", "Pandas"],
         "category": "data",
-        "isPublic": true
-      },
-      {
-        "id": "text-summarizer",
-        "title": "Document Summarizer",
-        "description": "Automatically generate concise summaries from long documents, articles, or research papers using advanced NLP techniques.",
-        "image": "/assets/text-summarizer.jpg",
-        "modelUrl": "https://huggingface.co/spaces/viniciusgribas/text-summarizer",
-        "tech": ["Python", "Transformers", "BERT", "Hugging Face"],
-        "category": "nlp",
         "isPublic": true
       },
       {
@@ -267,13 +259,13 @@
         "isPublic": false
       },
       {
-        "id": "anomaly-detection",
-        "title": "Time Series Anomaly Detection",
-        "description": "Industrial monitoring system that detects anomalies in time series data, essential for predictive maintenance and quality control.",
-        "image": "/assets/anomaly-detection.jpg",
-        "modelUrl": "https://private-demo.example.com",
-        "tech": ["Python", "Prophet", "LSTM", "Isolation Forest"],
-        "category": "data",
+        "id": "ai-energy-agent",
+        "title": "AI Agent with OCR Tools for Energy Lead Analysis",
+        "description": "The AI agent integrates with an OCR tool to detect electricity bills and incorporates them into data pipelines for real-time lead analysis.",
+        "image": "/assets/ai-energy-agent.jpg",
+        "modelUrl": "",
+        "tech": ["Python", "GPT4", "Azure AI Vision", "Optical character recognition (OCR)", "ETL pipelines"],
+        "category": "nlp",
         "isPublic": false
       }
     ]
