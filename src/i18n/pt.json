@@ -38,6 +38,7 @@
       "home": "Início",
       "about": "Sobre",
       "projects": "Projetos",
+      "sandbox" : "Playground de IA",
       "contact": "Contato",
       "openMenu": "Abrir menu",
       "logo": "</VGR>"
@@ -156,6 +157,94 @@
         }
       ]
     },
+    "sandbox": {
+      "title": "Playground de IA 🧠",
+      "description": "Experimente meus modelos de aprendizado de máquina e aplicações de dados em ação. Estas demonstrações interativas mostram aplicações práticas de técnicas de IA e engenharia de dados. Sinta-se à vontade para experimentar!",
+      "tryItNow": "Experimentar agora",
+      "learnMore": "Saiba mais",
+      "viewCode": "Ver código",
+      "privateLabel": "Privado",
+      "publicLabel": "Público",
+      "noResults": "Nenhuma demonstração corresponde à sua seleção de filtro atual.",
+      "modal": {
+        "restrictedTitle": "Acesso a Modelo Privado",
+        "restrictedMessage": "Este modelo está atualmente restrito devido a casos de uso especializados ou requisitos de configuração adicionais. Entre em contato comigo para acesso ou uma demonstração personalizada.",
+        "contactTitle": "Interessado em uma demonstração personalizada?",
+        "contactButton": "Contatar para Acesso"
+      },
+      "categories": {
+        "all": "Todas as Categorias",
+        "nlp": "Processamento de Linguagem Natural",
+        "cv": "Visão Computacional",
+        "data": "Análise de Dados",
+        "other": "Outras Aplicações"
+      },
+      "demos": [
+        {
+          "id": "text-sentiment",
+          "title": "Analisador de Sentimento de Texto",
+          "description": "Analise o sentimento de qualquer entrada de texto para determinar se é positivo, negativo ou neutro. Ótimo para análise de feedback de clientes.",
+          "image": "/assets/sentiment-analyzer.jpg",
+          "modelUrl": "https://huggingface.co/spaces/viniciusgribas/sentiment-analyzer",
+          "repoUrl": "https://github.com/viniciusgribas/sentiment-analyzer",
+          "tech": ["Python", "Transformers", "Gradio", "Hugging Face"],
+          "category": "nlp",
+          "isPublic": true
+        },
+        {
+          "id": "image-classifier",
+          "title": "App de Classificação de Imagens",
+          "description": "Carregue qualquer imagem e obtenha classificação instantânea usando um modelo de visão ajustado que pode reconhecer centenas de objetos cotidianos.",
+          "image": "/assets/image-classifier.jpg",
+          "modelUrl": "https://huggingface.co/spaces/viniciusgribas/image-classifier",
+          "repoUrl": "https://github.com/viniciusgribas/image-classifier",
+          "tech": ["Python", "PyTorch", "Gradio", "Visão Computacional"],
+          "category": "cv",
+          "isPublic": true
+        },
+        {
+          "id": "data-visualization",
+          "title": "Explorador Interativo de Dados de Energia",
+          "description": "Explore dados do setor energético brasileiro através de visualizações interativas. Filtre por região, período de tempo e fonte de energia.",
+          "image": "/assets/data-explorer.jpg",
+          "modelUrl": "https://huggingface.co/spaces/viniciusgribas/energy-data-explorer",
+          "tech": ["Python", "Streamlit", "Plotly", "Pandas"],
+          "category": "data",
+          "isPublic": true
+        },
+        {
+          "id": "text-summarizer",
+          "title": "Resumidor de Documentos",
+          "description": "Gere automaticamente resumos concisos de documentos longos, artigos ou papers de pesquisa usando técnicas avançadas de PLN.",
+          "image": "/assets/text-summarizer.jpg",
+          "modelUrl": "https://huggingface.co/spaces/viniciusgribas/text-summarizer",
+          "tech": ["Python", "Transformers", "BERT", "Hugging Face"],
+          "category": "nlp",
+          "isPublic": true
+        },
+        {
+          "id": "recommendation-engine",
+          "title": "Motor de Recomendação Personalizada",
+          "description": "Sistema de recomendação de nível empresarial que entrega sugestões de conteúdo personalizadas com base em padrões de comportamento do usuário.",
+          "image": "/assets/recommendation-engine.jpg",
+          "modelUrl": "https://private-demo.example.com",
+          "tech": ["Python", "TensorFlow", "Filtragem Colaborativa", "FastAPI"],
+          "category": "other",
+          "isPublic": false
+        },
+        {
+          "id": "anomaly-detection",
+          "title": "Detecção de Anomalias em Séries Temporais",
+          "description": "Sistema de monitoramento industrial que detecta anomalias em dados de séries temporais, essencial para manutenção preditiva e controle de qualidade.",
+          "image": "/assets/anomaly-detection.jpg",
+          "modelUrl": "https://private-demo.example.com",
+          "tech": ["Python", "Prophet", "LSTM", "Isolation Forest"],
+          "category": "data",
+          "isPublic": false
+        }
+      ]
+    },
+
     "contact": {
       "title": "Vamos Trabalhar Juntos 🤝",
       "description": "Pronto para iniciar um projeto? Me conte sua ideia!",

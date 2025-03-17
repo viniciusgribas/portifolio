@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Navbar, Hero, About, Projects, Contact } from './components/sections';
+import { Navbar, Hero, About, Projects, Contact, InteractiveSandbox } from './components/sections';
 
 const App: FC = () => {
 
@@ -20,6 +20,9 @@ const App: FC = () => {
           </section>
           <section id="projects" className="mt-16">
             <Projects />
+          </section>
+          <section id="sandbox" className="mt-16">
+            <InteractiveSandbox  />
           </section>
           <section id="contact" className="mt-16">
             <Contact />
