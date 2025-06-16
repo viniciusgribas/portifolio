@@ -65,7 +65,7 @@ const Projects = () => {
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-[#0A66C2] text-center mb-8 tracking-tight">
           {t('projects.title')}
