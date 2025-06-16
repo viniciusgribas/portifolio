@@ -190,6 +190,26 @@
         "date": "Nov 13, 2022 - Nov 15, 2022",
         "image": "/assets/south_america_map.jpeg",
         "url": "https://www.upwork.com/freelancers/viniciusg?p=1636909561297944576"
+      },
+      {
+        "id": "onthehillBJJ",
+        "title": "On the Hill BJJ - Social Project Website",
+        "description": "Developed a comprehensive multilingual website for a Brazilian Jiu-Jitsu social project in Rio de Janeiro, featuring modern responsive design, interactive galleries, and social impact storytelling.",
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Responsive Design",
+          "PWA",
+          "Multilingual Support",
+          "Google Analytics"
+        ],
+        "rating": 5.00,
+        "review": "A complete social project website built from scratch featuring multilingual support (Portuguese, English, French), interactive photo galleries, SEO optimization, and social media integration. The project transforms lives through Brazilian Jiu-Jitsu in the Babilônia community, Rio de Janeiro.",
+        "source": "Personal Project",
+        "date": "2025",
+        "image": "/assets/onthehill_project.png",
+        "url": "https://onthehillbjj.com/"
       }
     ]
   },

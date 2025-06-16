@@ -156,6 +156,26 @@
           "date": "13 de Novembro, 2022 - 15 de Novembro, 2022",
           "image": "/assets/south_america_map.jpeg",
           "url": "https://www.upwork.com/freelancers/viniciusg?p=1636909561297944576"
+        },
+        {
+          "id": "onthehillBJJ",
+          "title": "On the Hill BJJ - Site do Projeto Social",
+          "description": "Desenvolveu um site multilíngue abrangente para um projeto social de Jiu-Jitsu brasileiro no Rio de Janeiro, com design responsivo moderno, galerias interativas e narrativa de impacto social.",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Design Responsivo",
+            "PWA",
+            "Suporte Multilíngue",
+            "Google Analytics"
+          ],
+          "rating": 5.00,
+          "review": "Um site completo de projeto social construído do zero com suporte multilíngue (Português, Inglês, Francês), galerias de fotos interativas, otimização SEO e integração com redes sociais. O projeto transforma vidas através do Jiu-Jitsu brasileiro na comunidade da Babilônia, Rio de Janeiro.",
+          "source": "Projeto Pessoal",
+          "date": "2025",
+          "image": "/assets/onthehill_project.png",
+          "url": "https://onthehillbjj.com/"
         }
       ]
     },
